@@ -1,0 +1,139 @@
+/* ----------- Custom css ---------- */
+/* Notes */
+/*
+  .mtk1   : Symbol . ; [{( Suggestion inline
+  .mtk5   : Namespace definite default
+  .mtk6   : Numeric
+  .mtk8   : Class of html
+  .mtk9   : Like variable of function
+  .mtk10  : Like json =>
+  .mtk11  : String
+  .mtk13  : Like </ > tag of html
+  .mtk13  : Like regex
+  .mtk15  : Function
+  .mtk16  : Like Vanguard\Http\Resources\image.jpg
+  .mtk17  : Like return
+  .mtk18  : Like subscriptions context.subscriptions.push(disposable) js language
+  .mtk20  : Comments
+  .mtk23  : Like tag html
+*/
+
+/* Hints */
+/*
+  https://colorhunt.co/
+*/
+
+/* Colors used */
+.Colors-used {
+  color: #F2F2F2;
+  color: #AF11FF;
+  color: #1C1C1C;
+  color: #1E90FF;
+  color: #FA8072;
+  color: #59CE8F;
+  color: #50C878;
+  color: #00FF7F;
+  color: #FBC5C5;
+  color: #D8BFD8;
+  color: #C8B6E2;
+  color: #CE9DE8;
+  color: #9370DB;
+  color: #AFB4FF;
+  color: #9C9EFE;
+  color: #7B68EE;
+  color: #6A5ACD;
+}
+
+/* Common */
+/* Border selected file */
+.monaco-list.settings-toc-tree .monaco-list-row.selected,
+.monaco-list.settings-toc-tree .monaco-list-row.focused,
+.monaco-list .monaco-list-row.selected,
+.monaco-list.settings-toc-tree:not(.drop-target)
+.monaco-list-row:hover:not(.selected):not(.focused) {
+  color: #FFFFF0;
+  border-radius: 2px;
+  border: 1px solid #1E90FF;
+}
+
+.monaco-editor .findMatch {
+  border-radius: 5px;
+  border: 1px solid #1E90FF;
+  background-color: rgba(5, 115, 240, 0.15);
+}
+
+.monaco-editor .currentFindMatch {
+  background-color: rgba(5, 115, 240, 0.35);
+}
+
+/* Normal mode */
+.mtk1 {
+  color: #FFFFF0;
+}
+
+.mtk5 {
+  color: #59CE8F;
+}
+
+.mtk6 {
+  color: #FA8072;
+}
+
+.mtk8 {
+  color: #50C878;
+}
+
+.mtk9 {
+  color: #AFB4FF;
+}
+
+.mtk10 {
+  color: #FFFFF0;
+}
+
+.mtk11 {
+  color: #FFFFF0;
+}
+
+.mtk13 {
+  color: #00FF7F;
+}
+
+.mtk14 {
+  color: #FBC5C5;
+}
+
+.mtk15 {
+  color: #FFFFF0;
+  text-shadow: 0 0 1px #6A5ACD,
+               0 0 2px #483D8B,
+               0 0 2px #483D8B,
+               0 0 3px #483D8B,
+               0 0 3px #483D8B,
+               0 0 3px #483D8B,
+               0 0 5px #483D8B,
+               0 0 5px #483D8B,
+               0 0 5px #483D8B,
+               0 0 5px #483D8B,
+               0 0 5px #483D8B;
+}
+
+.mtk16 {
+  color: #50C878;
+}
+
+.mtk17 {
+  color: #9C9EFE;
+}
+
+.mtk18 {
+  color: #C8B6E2;
+}
+
+.mtk20 {
+  font-style: italic;
+}
+
+.mtk23 {
+  color: #50C878;
+}
