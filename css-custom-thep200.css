@@ -16,6 +16,7 @@
   .mtk18  : Like subscriptions context.subscriptions.push(disposable) js language
   .mtk20  : Comments
   .mtk23  : Like tag html
+  .tabs-container : Bar chứa các tabs
 */
 
 /* Hints */
@@ -66,6 +67,30 @@
   background-color: rgba(5, 115, 240, 0.35);
 }
 
+.tabs-container {
+  background-color: #1C1C1C;
+}
+
+.button-link {
+  transition: 0.45s;
+}
+
+.button-link:hover {
+  margin-left: 20px !important;
+}
+
+.split-view-container {
+  background-color: #1C1C1C;
+}
+
+.monaco-list-rows {
+  background-color: #1C1C1C !important;
+}
+
+.composite {
+  background-color: #1C1C1C;
+}
+
 /* Normal mode */
 .mtk1 {
   color: #FFFFF0;
@@ -96,7 +121,7 @@
 }
 
 .mtk13 {
-  color: #00FF7F;
+  color: #50C878;
 }
 
 .mtk14 {
@@ -114,8 +139,8 @@
                0 0 5px #483D8B,
                0 0 5px #483D8B,
                0 0 5px #483D8B,
-               0 0 5px #483D8B,
-               0 0 5px #483D8B;
+               0 0 7px #483D8B,
+               0 0 7px #483D8B;
 }
 
 .mtk16 {
@@ -135,5 +160,5 @@
 }
 
 .mtk23 {
-  color: #50C878;
+  color: #FFFFF0;
 }
