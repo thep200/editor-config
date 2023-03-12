@@ -34,6 +34,7 @@
   color: #59CE8F;
   color: #50C878;
   color: #00FF7F;
+  color: #1C884C;
   color: #FBC5C5;
   color: #D8BFD8;
   color: #C8B6E2;
@@ -68,7 +69,7 @@
 }
 
 .tabs-container {
-  background-color: #1C1C1C;
+  background-image: linear-gradient(to right, #1C1C1C 0%, #2C2C2C 100%);
 }
 
 .button-link {
