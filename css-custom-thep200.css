@@ -102,7 +102,12 @@
 }
 
 .mtk6 {
-  color: #FA8072;
+  color: #FFF;
+  text-shadow: 0 0 1px #FA8072,
+               0 0 2px #FF5C5C,
+               0 0 3px #FF5C5C,
+               0 0 5px #FF5A5A,
+               0 0 7px #FF5050;
 }
 
 .mtk8 {
@@ -145,7 +150,7 @@
 }
 
 .mtk16 {
-  color: #50C878;
+  color: #00FF7F;
 }
 
 .mtk17 {
