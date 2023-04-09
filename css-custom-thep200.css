@@ -2,29 +2,29 @@
 
 /* Hints */
 /*
-  https://colorhunt.co/
+  https://tailwindcss.com/docs/customizing-colors
 */
 
 /* Colors used */
 .Colors-used {
-  color: #F2F2F2;
-  color: #AF11FF;
-  color: #1C1C1C;
-  color: #1E90FF;
-  color: #FA8072;
-  color: #59CE8F;
-  color: #50C878;
-  color: #00FF7F;
-  color: #1C884C;
-  color: #FBC5C5;
-  color: #D8BFD8;
-  color: #C8B6E2;
-  color: #CE9DE8;
-  color: #9370DB;
-  color: #AFB4FF;
-  color: #9C9EFE;
-  color: #7B68EE;
-  color: #6A5ACD;
+    color: #F2F2F2;
+    color: #AF11FF;
+    color: #1C1C1C;
+    color: #1E90FF;
+    color: #FA8072;
+    color: #59CE8F;
+    color: #50C878;
+    color: #00FF7F;
+    color: #1C884C;
+    color: #FBC5C5;
+    color: #D8BFD8;
+    color: #C8B6E2;
+    color: #CE9DE8;
+    color: #9370DB;
+    color: #AFB4FF;
+    color: #9C9EFE;
+    color: #7B68EE;
+    color: #6A5ACD;
 }
 
 /* Common */
@@ -32,108 +32,94 @@
 .monaco-list.settings-toc-tree .monaco-list-row.selected,
 .monaco-list.settings-toc-tree .monaco-list-row.focused,
 .monaco-list .monaco-list-row.selected,
-.monaco-list.settings-toc-tree:not(.drop-target)
-.monaco-list-row:hover:not(.selected):not(.focused) {
-  color: #FFFFF0;
-  border-radius: 2px;
-  border: 1px solid #1E90FF;
-}
-
-.monaco-editor .findMatch {
-  border-radius: 5px;
-  border: 1px solid #1E90FF;
-  background-color: rgba(5, 115, 240, 0.15);
-}
-
-.monaco-editor .currentFindMatch {
-  background-color: rgba(5, 115, 240, 0.35);
-}
-
-.tabs-container {
-  background-image: linear-gradient(to right, #1C1C1C 0%, #2C2C2C 100%);
+.monaco-list.settings-toc-tree:not(.drop-target) .monaco-list-row:hover:not(.selected):not(.focused) {
+    color: #FFFFF0;
+    border-radius: 2px;
+    border: 1px solid #1E90FF;
 }
 
 .button-link {
-  transition: 0.45s;
+    transition: 0.45s;
 }
 
 .button-link:hover {
-  margin-left: 20px !important;
+    margin-left: 20px !important;
 }
 
 /* Normal mode */
 .mtk1 {
-  color: #FFFFF0;
+    color: #FFFFF0;
 }
 
 .mtk5 {
-  color: #59CE8F;
+    color: #59CE8F;
 }
 
 .mtk6 {
-  color: #FFF;
-  text-shadow: 0 0 1px #FA8072,
-               0 0 2px #FF5C5C,
-               0 0 3px #FF5C5C,
-               0 0 5px #FF5A5A,
-               0 0 7px #FF5050;
+    color: #FFF;
+    text-shadow: 0 0 1px #FA8072,
+        0 0 2px #FF5C5C,
+        0 0 3px #FF5C5C,
+        0 0 5px #FF5A5A,
+        0 0 7px #FF5050;
 }
 
 .mtk8 {
-  color: #50C878;
+    color: #50C878;
+    font-style: italic;
 }
 
 .mtk9 {
-  color: #AFB4FF;
+    color: #AFB4FF;
 }
 
 .mtk10 {
-  color: #FFFFF0;
+    color: #FFFFF0;
 }
 
 .mtk11 {
-  color: #FFFFF0;
+    color: #FFFFF0;
 }
 
 .mtk13 {
-  color: #50C878;
+    color: #50C878;
 }
 
 .mtk14 {
-  color: #FBC5C5;
+    color: #FBC5C5;
 }
 
 .mtk15 {
-  color: #FFFFF0;
-  text-shadow: 0 0 1px #6A5ACD,
-               0 0 2px #483D8B,
-               0 0 2px #483D8B,
-               0 0 3px #483D8B,
-               0 0 3px #483D8B,
-               0 0 3px #483D8B,
-               0 0 5px #483D8B,
-               0 0 5px #483D8B,
-               0 0 5px #483D8B,
-               0 0 7px #483D8B,
-               0 0 7px #483D8B;
+    color: #FFFFF0;
+    text-shadow: 0 0 1px #6A5ACD,
+        0 0 2px #483D8B,
+        0 0 2px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 7px #483D8B,
+        0 0 7px #483D8B;
 }
 
 .mtk16 {
-  color: #00FF7F;
+    color: #00FF7F;
 }
 
 .mtk17 {
-  color: #9C9EFE;
+    color: #9C9EFE;
 }
 
 .mtk18 {
-  color: #C8B6E2;
+    color: #C8B6E2;
 }
 
 .mtk20 {
-  font-style: italic;
+    font-style: italic;
 }
 
 .mtk23 {
-  color: #FFFFF0;
+    color: #FFFFF0;
 }
