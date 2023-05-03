@@ -1,4 +1,5 @@
-" Nvim setup file by Thep200_2021
+" Nvim setup file by thep200
+
 
 call plug#begin('~/AppData/Local/nvim/plugged')
 
@@ -17,29 +18,29 @@ call plug#end()
 " Setup Plugin
 	" vim-startify
 		let g:startify_bookmarks = systemlist("cut -sd' ' -f 5- ~/.NERDTreeBookmarks")
-		
+
 	" Themes vim
 		colorscheme onedark
-		
+
 	" NERDTree
 		set autochdir
 		let NERDTreeChDirMode=2
 		let NERDTreeMinimalUI=1
 		map <C-s> :NERDTreeFind<CR>
-		map <C-a> :NERDTreeToggle<CR> 
+		map <C-a> :NERDTreeToggle<CR>
 		let g:NERDTreeDirArrowExpandable = '▸'
 		let g:NERDTreeDirArrowCollapsible = '▾'
 		autocmd BufWinEnter * silent NERDTreeMirror
 		autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
 			\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-			  
+
 	" Lightline-vim
 		let g:lightline = { 'colorscheme': 'onedark' }
 
 	" Ale-vim
 		let g:ale_sign_error = ' X'
 		let g:ale_sign_warning = ' !'
-		
+
 	" Deoplete-vim
 		let g:python3_host_prog = 'D:\Python Evns\py37\python.exe'
 		let g:deoplete#enable_at_startup = 1
@@ -50,22 +51,22 @@ call plug#end()
 		let g:pymode_rope = 0
 		let g:jedi#popup_select_first = 0
 		autocmd FileType python setlocal completeopt-=preview
-		
+
 	" Vim-auto-save
 		let g:auto_save = 1
-		
+
 " Setup Basic
 	set number
 	set showtabline=2
 	set encoding=UTF-8
 	set fileencodings=UTF-8
 	autocmd BufRead,BufNewFile * start
-	
+
 	" Map
 		nnoremap <C-z> u
 		vnoremap <C-c> "*y
 		inoremap xx <Esc>   """  key is <Esc> setting
-	
+
 	" Floating Windows Terminal
 		function! OpenFloatTerm()
 		  let height = float2nr((&lines - 2) / 1.5)
@@ -107,8 +108,8 @@ call plug#end()
 		noremap <C-ScrollWheelDown> :call AdjustFontSize(-1)<CR>
 		inoremap <C-ScrollWheelUp> <Esc>:call AdjustFontSize(1)<CR>a
 		inoremap <C-ScrollWheelDown> <Esc>:call AdjustFontSize(-1)<CR>
-		
-		
+
+
 	" Bookmarks
 		let g:startify_bookmarks = [
       \ '~/AppData/Local/nvim/init.vim',
