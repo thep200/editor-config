@@ -1,4 +1,4 @@
-# The root dark neo themes
+# The root dark editor setup for vscode
 - .mtk1   : Symbol . ; [{( Suggestion inline
 - .mtk5   : Namespace definite default
 - .mtk6   : Numeric
@@ -19,3 +19,10 @@
 - .monaco-editor .findMatch : search match (ctr + f)
 - .monaco-editor .currentFindMatch : search current match
 - .button-link : link ở trang start của vscode
+
+## Extension
+> Setup theme vscode to `default dark`
+- Css and Js custom
+- Material themes Icons
+- Vue language
+
