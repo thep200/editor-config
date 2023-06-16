@@ -7,6 +7,10 @@
     border: 1px solid #1E90FF;
 }
 
+.title.show-file-icons {
+    display: none !important;
+}
+
 .button-link {
     transition: 0.45s;
 }
