@@ -19,13 +19,11 @@
     margin-left: 20px !important;
 }
 
-.mtk6 {
-    color: #FFF;
-    text-shadow: 0 0 1px #FA8072,
-        0 0 2px #FF5C5C,
-        0 0 3px #FF5C5C,
-        0 0 5px #FF5A5A,
-        0 0 7px #FF5050;
+.mtk22 {
+    background: linear-gradient(90deg, #ff7b72 0%, #ff9d96 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .mtk15 {
