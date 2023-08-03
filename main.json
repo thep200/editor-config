@@ -21,6 +21,9 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "window.commandCenter": false,
 
+    // Only win
+    "window.menuBarVisibility": "toggle",
+
     // Mouse setting
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
@@ -52,11 +55,11 @@
     "explorer.confirmDragAndDrop": false,
 
     // Minimap
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.showSlider": "always",
     "editor.minimap.enabled": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.renderCharacters": false,
 
-    // Workbench color custom #1C202A
+    // Workbench color custom
     "workbench.colorCustomizations":
     {
         "button.background": "#238636",
@@ -102,114 +105,19 @@
         "peekViewEditor.background": "#1B1B1A",
         "panel.border": "#232121",
         "terminal.border": "#232121",
-        "profileBadge.background":"#1C884C",
-        "profileBadge.foreground":"#FFF"
     },
 
-    // Custom color
-    "editor.tokenColorCustomizations":
-    {
-        "textMateRules": [
-            {
-                "scope": [
-                    "string",
-                    "punctuation.definition.string"
-                ],
-                "settings": {
-                    "foreground": "#A5D6FF",
-                }
-            },
-            {
-                "scope": [
-                    "comment"
-                ],
-                "settings": {
-                    "foreground": "#8B949E",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    "storage.modifier",
-                    "storage.type",
-                    "keyword",
-                    "keyword.control",
-                    "keyword.operator",
-                    "keyword.other.unit"
-                ],
-                "settings": {
-                    "foreground": "#FF7B72",
-                    "fontStyle": "italic bold"
-                }
-            },
-            {
-                "scope": [
-                    "support.type",
-                    "entity.name.tag",
-                    "support.class.component",
-                    "support.type.property-name",
-                ],
-                "settings": {
-                    "foreground": "#7EE787",
-                }
-            },
-            {
-                "scope": [
-                    "variable.language",
-                    "constant.other",
-                    "support.class",
-                    "support.other.namespace",
-                    "variable.other.constant",
-                    "punctuation.definition.variable",
-                    "entity.other.attribute-name.class.css",
-                    "entity.other.attribute-name.pseudo-class.css"
-                ],
-                "settings": {
-                    "foreground": "#79C0FF",
-                }
-            },
-            {
-                "scope": [
-                    "variable",
-                    "text.html",
-                    "punctuation.definition.tag",
-                    "punctuation.separator.inheritance",
-                    "invalid.illegal.character-not-allowed-here.html",
-                ],
-                "settings": {
-                    "foreground": "#E6EDF3",
-                }
-            },
-            {
-                "scope": [
-                    "constant.numeric",
-                    "constant.language",
-                    "entity.name.type",
-                    "entity.other.inherited-class",
-                    "punctuation.definition.template-expression.begin",
-                    "punctuation.definition.template-expression.end",
-                    "support.constant.property-value.css",
-                ],
-                "settings": {
-                    "foreground": "#EC8E2C",
-                }
-            },
-            {
-                "scope": [
-                    "entity.other.attribute-name",
-                    "keyword.control.loop.vue",
-                    "keyword.control.conditional.vue",
-                ],
-                "settings": {
-                    "foreground": "#D2A8FF",
-                }
-            },
-        ]
-    },
+    // Setting css
+    "vscode_custom_css.imports": [
+        // Win
+        // "file:///C:/sync-editor-config/css-custom-thep200.css",
+
+        // Mac
+        "file:///Users/thep200/sync-editor-config/css-custom-thep200.css",
+    ],
 
     // Gitlen settings
     "diffEditor.codeLens": true,
-    "editor.codeLensFontFamily": "Victor Mono",
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.currentLine.pullRequests.enabled": false,
@@ -219,28 +127,35 @@
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 1,
     "gitlens.currentLine.format": "😏 ${author}, ${agoOrDate}",
-    "unocss.underline": false,
-    "unocss.colorPreview": false,
 
-    // Font and styling
+    // Not Synced settings
+    "settingsSync.ignoredSettings": [
+        "editor.fontSize",
+        "editor.fontFamily",
+        "editor.lineHeight",
+        "editor.fontWeight",
+        "editor.letterSpacing",
+        "editor.codeLensFontFamily",
+        "terminal.integrated.fontFamily",
+        "terminal.integrated.fontSize",
+        "terminal.integrated.letterSpacing",
+        "terminal.integrated.fontWeight",
+    ],
     // "editor.fontLigatures": true,
-    "editor.fontFamily": "Victor Mono",
-    "scm.inputFontFamily": "Victor Mono",
-    "debug.console.fontFamily": "Victor Mono",
-    "editor.inlayHints.fontFamily": "Victor Mono",
     "editor.fontSize": 19,
-    "editor.letterSpacing": 1.75,
-    "editor.lineHeight": 3.35,
+    "editor.lineHeight": 3,
+    "editor.letterSpacing": 1.85,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.letterSpacing": 1.25,
     "editor.fontWeight": "500",
-    "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontWeight": "500",
-    "terminal.integrated.letterSpacing": 1.75,
+    "editor.fontFamily": "Victor Mono",
+    "editor.codeLensFontFamily": "Victor Mono",
+    "terminal.integrated.fontFamily": "Victor Mono",
+    "window.zoomLevel": -1.15,
 
     // Daily settings and ignore settings
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "workbench.startupEditor": "none",
-    "editor.accessibilitySupport": "off",
-    "window.zoomLevel": -1.25,
     "workbench.colorTheme": "Default Dark+",
-    "workbench.activityBar.visible": false,
+    "workbench.startupEditor": "none",
 }
