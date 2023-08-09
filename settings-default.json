@@ -1,8 +1,4 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
     "editor.autoClosingBrackets": "always",
     "editor.bracketPairColorization.enabled": false,
     "editor.fastScrollSensitivity": 15,
@@ -13,20 +9,20 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize":0,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
-    "workbench.layoutControl.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "window.commandCenter": false,
-
-    // Only win
-    "window.menuBarVisibility": "toggle",
 
     // Mouse setting
-    "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
+    "editor.cursorSmoothCaretAnimation": "on",
     "terminal.integrated.cursorBlinking": true,
 
     // Completely setting
@@ -39,7 +35,7 @@
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.wordBasedSuggestionsMode": "allDocuments",
     "editor.parameterHints.enabled": true,
-    "editor.quickSuggestionsDelay": 10,
+    "editor.quickSuggestionsDelay": 5,
     "editor.quickSuggestions":
     {
         "other": "on",
@@ -50,63 +46,49 @@
     // Terminal settings
     "terminal.integrated.defaultProfile.windows": "Git Bash",
 
-    // File setting
+    // Explorer setting
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
-    // Minimap
-    "editor.minimap.enabled": false,
-    "editor.minimap.showSlider": "always",
-    "editor.minimap.renderCharacters": false,
 
     // Workbench color custom
     "workbench.colorCustomizations":
     {
+        "editor.background": "#121212",
+        "editor.findMatchBorder": "#1F6FEB",
+        "editor.findMatchBackground": "#1F6FEB30",
+        "editor.findMatchHighlightBackground": "#1F6FEB30",
+        "editor.selectionBackground": "#1F6FEB50",
+        "editor.lineHighlightBackground": "#121212",
+        "editor.wordHighlightBackground": "#121212",
+        "editor.selectionHighlightBackground": "#1F6FEB30",
+        "editorBracketMatch.border": "#1E90FF50",
+        "editorSuggestWidget.border": "#1b1b1b",
+        "editorSuggestWidget.background": "#121212",
+        "editorWidget.border": "#1F6FEB",
+        "editorWidget.background": "#121212",
         "button.background": "#238636",
         "button.hoverBackground": "#2ea043",
-        "activityBar.background": "#1B1B1A",
-        "editor.background": "#1B1B1A",
-        "terminal.background": "#1B1B1A",
-        "editor.findMatchBackground": "#1F6FEB20",
-        "editor.findMatchBorder": "#1F6FEB",
-        "editor.findMatchHighlightBackground": "#1F6FEB50",
-        "editor.lineHighlightBackground": "#1B1B1A",
-        "editor.selectionBackground": "#1F6FEB70",
-        "editor.selectionHighlightBackground": "#2ea04350",
-        "editorBracketMatch.border": "#1E90FF80",
-        "editorGroupHeader.tabsBackground": "#1B1B1A",
-        "editorWidget.background": "#1B1B1A",
-        "editorWidget.border": "#1F6FEB",
-        "editorSuggestWidget.border": "#1F6FEB30",
-        "tab.activeBorder": "#1F6FEB",
-        "tab.activeBackground": "#1B2735",
-        "tab.hoverBackground": "#1B2735",
-        "tab.inactiveBackground": "#1B1B1A",
-        "tab.hoverForeground": "#FFFFFF",
-        "tab.border": "#1B1B1A",
-        "input.border": "#1F6FEB",
-        "menu.background": "#1B1B1A",
-        "menu.selectionBorder": "#1F6FEB30",
-        "sideBar.background": "#1B1B1A",
-        "sideBar.border": "#1B1B1A",
-        "sideBarSectionHeader.background": "#1B1B1A",
-        "statusBar.background": "#1B1B1A",
-        "statusBar.debuggingBackground": "#1B1B1A",
-        "statusBar.noFolderBackground": "#1B1B1A",
-        "titleBar.activeBackground": "#1B1B1A",
-        "titleBar.border": "#1B1B1A",
-        "titleBar.inactiveBackground": "#1B1B1A",
-        "notifications.background": "#1B1B1A",
-        "list.hoverForeground": "#FFFFF0",
-        "list.hoverBackground": "#1B2735",
+        "menu.background": "#121212",
+        "menu.selectionBorder": "#1b1b1b",
+        "sideBar.background": "#121212",
+        "sideBar.border": "#121212",
+        "sideBarSectionHeader.background": "#121212",
+        "titleBar.activeBackground": "#121212",
+        "titleBar.border": "#121212",
+        "titleBar.inactiveBackground": "#121212",
+        "list.hoverForeground": "#FFF",
+        "list.hoverBackground": "#1b1b1b",
         "list.inactiveSelectionBackground": "#1E90FF30",
         "list.inactiveSelectionForeground": "#ffffff",
-        "peekViewEditorGutter.background": "#1B1B1A",
-        "peekViewEditor.background": "#1B1B1A",
-        "panel.border": "#232121",
-        "terminal.border": "#232121",
+        "peekViewEditorGutter.background": "#121212",
+        "peekViewEditor.background": "#121212",
+        "terminal.border": "#1b1b1b",
+        "terminal.background": "#121212",
         "profileBadge.background":"#1C884C",
-        "profileBadge.foreground":"#FFF"
+        "profileBadge.foreground":"#FFF",
+        "activityBar.background": "#121212",
+        "notifications.background": "#121212",
+        "panel.border": "#1b1b1b",
     },
 
     // Custom color
@@ -206,18 +188,9 @@
                 "settings": {
                     "foreground": "#D2A8FF",
                 }
-            },
+            }
         ]
     },
-
-    // Setting css
-    "vscode_custom_css.imports": [
-        // Win
-        // "file:///C:/sync-editor-config/css-custom-thep200.css",
-
-        // Mac
-        "file:///Users/thep200/sync-editor-config/css-custom-thep200.css",
-    ],
 
     // Gitlen settings
     "diffEditor.codeLens": true,
@@ -243,6 +216,7 @@
         "terminal.integrated.fontSize",
         "terminal.integrated.letterSpacing",
         "terminal.integrated.fontWeight",
+        "vscode_custom_css.imports"
     ],
     "editor.fontSize": 20,
     "editor.lineHeight": 3.35,
@@ -254,7 +228,10 @@
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
-    "window.zoomLevel": -1.25,
+    "vscode_custom_css.imports": [
+        "file:///Users/thep200/sync-editor-config/css-custom-thep200.css",
+        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-1.0.13/dist/updateHandler.js"
+    ],
 
     // Daily settings change
     "workbench.colorTheme": "Default Dark+",
@@ -263,4 +240,10 @@
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
+    "unocss.colorPreview": false,
+    "unocss.underline": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.zoomLevel": -1.45,
 }
