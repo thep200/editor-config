@@ -1,14 +1,5 @@
-.monaco-list.settings-toc-tree .monaco-list-row.selected,
-.monaco-list.settings-toc-tree .monaco-list-row.focused,
-.monaco-list .monaco-list-row.selected,
-.monaco-list.settings-toc-tree:not(.drop-target) .monaco-list-row:hover:not(.selected):not(.focused) {
-    color: #FFFFF0;
-    border-radius: 2px;
-    border: 1px solid #1E90FF;
-}
-
-.title.show-file-icons {
-    display: none !important;
+.tabs-and-actions-container {
+    background-color: #121212;
 }
 
 .button-link {
