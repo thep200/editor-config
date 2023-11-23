@@ -8,15 +8,15 @@
     "editor.cursorBlinking": "expand",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.verticalScrollbarSize":0,
-    "editor.minimap.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.multiDocumentOccurrencesHighlight": true,
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
-    "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "diffEditor.ignoreTrimWhitespace": false,
 
@@ -56,10 +56,10 @@
         "editor.background": "#121212",
         "editor.findMatchBorder": "#1F6FEB",
         "editor.findMatchBackground": "#1F6FEB30",
-        "editor.findMatchHighlightBackground": "#1F6FEB30",
+        "editor.findMatchHighlightBackground": "#b3b3b330",
         "editor.selectionBackground": "#1F6FEB50",
-        "editor.lineHighlightBackground": "#121212",
-        "editor.wordHighlightBackground": "#121212",
+        "editor.lineHighlightBackground": "#1e1e1e",
+        "editor.wordHighlightBackground": "#1F6FEB30",
         "editor.selectionHighlightBackground": "#1F6FEB30",
         "editorBracketMatch.border": "#1E90FF50",
         "editorSuggestWidget.border": "#1b1b1b",
@@ -84,11 +84,12 @@
         "peekViewEditor.background": "#121212",
         "terminal.border": "#1b1b1b",
         "terminal.background": "#121212",
-        "profileBadge.background":"#1C884C",
+        "profileBadge.background":"#187a46",
         "profileBadge.foreground":"#FFF",
         "activityBar.background": "#121212",
         "notifications.background": "#121212",
         "panel.border": "#1b1b1b",
+        "input.border": "#1F6FEB"
     },
 
     // Custom color
@@ -101,7 +102,7 @@
                     "punctuation.definition.string"
                 ],
                 "settings": {
-                    "foreground": "#A5D6FF",
+                    "foreground": "#A2D2FB",
                 }
             },
             {
@@ -123,7 +124,7 @@
                     "keyword.other.unit"
                 ],
                 "settings": {
-                    "foreground": "#FF7B72",
+                    "foreground": "#FA7970",
                     "fontStyle": "italic bold"
                 }
             },
@@ -135,7 +136,7 @@
                     "support.type.property-name",
                 ],
                 "settings": {
-                    "foreground": "#7EE787",
+                    "foreground": "#7CE38B",
                 }
             },
             {
@@ -145,12 +146,13 @@
                     "support.class",
                     "support.other.namespace",
                     "variable.other.constant",
+                    "entity.name.namespace",
                     "punctuation.definition.variable",
                     "entity.other.attribute-name.class.css",
                     "entity.other.attribute-name.pseudo-class.css"
                 ],
                 "settings": {
-                    "foreground": "#79C0FF",
+                    "foreground": "#77BDFB",
                 }
             },
             {
@@ -176,7 +178,7 @@
                     "support.constant.property-value.css",
                 ],
                 "settings": {
-                    "foreground": "#EC8E2C",
+                    "foreground": "#FAA356",
                 }
             },
             {
@@ -186,7 +188,7 @@
                     "keyword.control.conditional.vue",
                 ],
                 "settings": {
-                    "foreground": "#D2A8FF",
+                    "foreground": "#CEA5FB",
                 }
             }
         ]
@@ -230,20 +232,29 @@
     "terminal.integrated.fontFamily": "Victor Mono",
     "vscode_custom_css.imports": [
         "file:///Users/thep200/sync-editor-config/css-custom-thep200.css",
-        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-1.0.13/dist/updateHandler.js"
+        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
     ],
 
     // Daily settings change
-    "workbench.colorTheme": "Default Dark+",
-    "workbench.startupEditor": "none",
+    "unocss.colorPreview": false,
+    "unocss.underline": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
+    "window.zoomLevel": -1.55,
+    "zenMode.restore": true,
+    "editor.accessibilitySupport": "off",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
-    "unocss.colorPreview": false,
-    "unocss.underline": false,
-    "window.menuBarVisibility": "toggle",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "zenMode.showTabs": "none",
     "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "inlineChat.showGutterIcon": true,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.editor.showTabs": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Default Dark+",
     "window.commandCenter": false,
-    "window.zoomLevel": -1.45,
 }

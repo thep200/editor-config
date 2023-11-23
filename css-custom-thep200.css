@@ -1,3 +1,11 @@
+.window-title, .title-label {
+    display: none;
+}
+
+#workbench\.parts\.sidebar > div.composite.title {
+    display: none;
+}
+
 .tabs-and-actions-container {
     background-color: #121212;
 }
