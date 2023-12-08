@@ -13,6 +13,10 @@
     display: none;
 }
 
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
+    display: none;
+}
+
 .tabs-and-actions-container {
     background-color: #121212;
 }
