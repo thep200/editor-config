@@ -9,7 +9,6 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
-    "editor.multiDocumentOccurrencesHighlight": true,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
@@ -121,7 +120,8 @@
                     "keyword",
                     "keyword.control",
                     "keyword.operator",
-                    "keyword.other.unit"
+                    "keyword.other.unit",
+                    "constant.character.escape"
                 ],
                 "settings": {
                     "foreground": "#FA7970",
@@ -134,6 +134,7 @@
                     "entity.name.tag",
                     "support.class.component",
                     "support.type.property-name",
+                    "support.type.vendored.property-name.css",
                 ],
                 "settings": {
                     "foreground": "#7CE38B",
@@ -149,7 +150,9 @@
                     "entity.name.namespace",
                     "punctuation.definition.variable",
                     "entity.other.attribute-name.class.css",
-                    "entity.other.attribute-name.pseudo-class.css"
+                    "entity.other.attribute-name.pseudo-class.css",
+                    "entity.other.attribute-name.id.css",
+                    "entity.name.tag.css"
                 ],
                 "settings": {
                     "foreground": "#77BDFB",
@@ -176,6 +179,7 @@
                     "punctuation.definition.template-expression.begin",
                     "punctuation.definition.template-expression.end",
                     "support.constant.property-value.css",
+                    "constant.other.color.rgb-value.hex.css"
                 ],
                 "settings": {
                     "foreground": "#FAA356",
@@ -204,7 +208,7 @@
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 1,
-    "gitlens.currentLine.format": "😏 ${author}, ${agoOrDate}",
+    "gitlens.currentLine.format": "🙄 ${author}, ${agoOrDate}",
 
     // Not Synced settings
     "settingsSync.ignoredSettings": [
@@ -220,41 +224,50 @@
         "terminal.integrated.fontWeight",
         "vscode_custom_css.imports"
     ],
-    "editor.fontSize": 20,
-    "editor.lineHeight": 3.35,
-    "editor.letterSpacing": 1.85,
-    "terminal.integrated.fontSize": 17,
-    "terminal.integrated.letterSpacing": 1.25,
-    "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "500",
+    "editor.fontSize": 19,
+    "editor.lineHeight": 3.25,
+    "editor.letterSpacing": 1.95,
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.letterSpacing": 1.95,
+    "editor.fontWeight": "450",
+    "terminal.integrated.fontWeight": "600",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
     "vscode_custom_css.imports": [
-        "file:///Users/thep200/sync-editor-config/css-custom-thep200.css",
+        "file:///Users/thep200/Study/editor-config/themes/style.css",
         "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
     ],
+
+    // PHP setting
+    "php.completion.parameters": "parentheses",
+    "php.inlayHints.parameters.enabled": true,
+    "php.inlayHints.parameters.suppressNameMatchingValue": true,
+    "php.inlayHints.types.return": true,
+    "php.hover.fullname": true,
+    "php.linkedEditing.variables": true,
+    "php.inlayHints.types.variable": true,
 
     // Daily settings change
     "unocss.colorPreview": false,
     "unocss.underline": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "window.zoomLevel": -1.55,
     "zenMode.restore": true,
     "editor.accessibilitySupport": "off",
+    "window.zoomLevel": -1.15,
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
     "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": false,
     "zenMode.showTabs": "none",
-    "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
-    "inlineChat.showGutterIcon": true,
+    "inlineChat.showGutterIcon": "never",
     "git.openRepositoryInParentFolders": "never",
-    "workbench.editor.showTabs": "none",
     "workbench.sideBar.location": "right",
-    "workbench.activityBar.location": "hidden",
     "workbench.colorTheme": "Default Dark+",
     "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": "none",
 }
