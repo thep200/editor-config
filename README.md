@@ -31,7 +31,7 @@
 - .button-link : link ở trang start của vscode
 
 # Bin (Setup remote terminal into docker container)
-> 🔴 **This setup right on my local, you can read the code to understand the idea and create your own config. Hope this help you, goodluck!**
+> 🔴 This setup right on my local, you can read the code to understand the idea and create your own config. Hope this help you, goodluck!
 
 ```
 ---------       -------      ----------

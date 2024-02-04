@@ -1,21 +1,34 @@
-# Current dir
-current_directory=$(pwd)
-
-# Current folder
-current_folder=$(basename "$current_directory")
-# Parent folder
-parent_folder=$(basename "$(dirname "$current_directory")")
-
+# Current directory working in laradock
+root_code_dir="$HOME/Code"
+# Depth retreive folder
+depth=2
+# PHP command
+php_command="php $@"
 # Container id
 container_id="laradock-php-fpm-1"
+# Action
+action_succeed=false
 
-# Build command
-cd_to_current_dir_command="cd $parent_folder/$current_folder"
-php_command="php $@"
-if [ "$#" -eq 0 ]; then
-    php_command="php -v"
+if [ -d "$root_code_dir" ]; then
+    for child in $(find "$root_code_dir" -maxdepth $depth -type d); do
+        if [ "$PWD" == $child ]; then
+            # Set action
+            action_succeed=true
+
+            # Build command
+            real_docker_dir=$(echo "$child" | sed "s|$root_code_dir/|""|")
+            php_command=$([ "$#" -eq 0 ] && echo "php -v" || echo "php $@")
+            command=$([ "$real_docker_dir" == "$child" ] && echo "$php_command" || echo "cd $real_docker_dir && $php_command")
+
+            # Execute
+            docker exec -it $container_id bash -c "$command"
+            break
+        fi
+    done
+
+    if [ "$action_succeed" = false ]; then
+        echo "The current directory is not part of the docker working directory (depth=$depth)"
+    fi
+else
+    echo "The path $root_code_dir does not exist"
 fi
-command="$cd_to_current_dir_command && $php_command"
-
-# Execute
-docker exec -it $container_id bash -c "$command"
