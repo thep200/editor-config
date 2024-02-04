@@ -1,0 +1,52 @@
+/* Hide window title */
+.window-title {
+    display: none;
+}
+
+/* Hide top bar of primary side bar */
+#workbench\.parts\.sidebar > div.composite.title {
+    display: none;
+}
+
+/* Hide top bar terminal */
+#workbench\.parts\.panel > div.composite.title.has-composite-bar {
+    display: none;
+}
+
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
+    display: none;
+}
+
+.tabs-and-actions-container {
+    background-color: #121212;
+}
+
+.button-link {
+    transition: 0.45s;
+}
+
+.button-link:hover {
+    margin-left: 20px !important;
+}
+
+.mtk22 {
+    background: linear-gradient(90deg, #ff7b72 0%, #ff9d96 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mtk15 {
+    color: #FFF;
+    text-shadow: 0 0 1px #6A5ACD,
+        0 0 2px #483D8B,
+        0 0 2px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 11px #483D8B,
+        0 0 11px #483D8B;
+}
