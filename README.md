@@ -1,28 +1,13 @@
-# Synchrony editor configuration
-This repo has some config for my work like PHP, web, python and editor config.
-
-## Themes requirements
+# Requirement
 - Using themes `Default Dark`
 - Extension: [Custom CSS and Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
 
-## Themes usage
-- Clone this repository to your device. Place it where you like.
-- Open terminal to your place and command `git branch` to see list of branch.
-- `git switch branch_name` to go your branch.
-- Go back to vscode and add below config to your `setting.json` file
-```json
+# Guide
+- Copy `style.css` file into your custom dir and paste it into `vscode_custom_css` import path.
+```Json
 // Example window
-"vscode_custom_css.imports": [
-    "file:///C:/sync-editor-config/css-custom-thep200.css",
-],
+"vscode_custom_css.imports": [],
 ```
-- Press `Ctr + Shift + p` and `Reload Css custom and Js`.
-- Good luck!
-
-## Bonus
-See more about tricks and tips on github here: [Git notes and tips](https://github.com/thep200/git-notes)
-
-Switch to `php-setup` branch to see config php.
 
 # The root dark editor setup for vscode
 - .mtk1   : Symbol . ; [{( Suggestion inline
@@ -40,15 +25,57 @@ Switch to `php-setup` branch to see config php.
 - .mtk18  : Like subscriptions context.subscriptions.push(disposable) js language
 - .mtk20  : Comments
 - .mtk23  : Like tag html
-
 - .tabs-container : Bar chứa các tabs
 - .monaco-editor .findMatch : search match (ctr + f)
 - .monaco-editor .currentFindMatch : search current match
 - .button-link : link ở trang start của vscode
 
-## Extension
-> Setup theme vscode to `default dark`
-- Css and Js custom
-- Material themes Icons
-- Vue language
+# Bin (Setup remote terminal into docker container)
+> 🔴 **This setup right on my local, you can read the code to understand the idea and create your own config. Hope this help you, goodluck!**
 
+```
+---------       -------      ----------
+| Local | --->  | Bin | ---> | Docker |
+---------       -------      ----------
+```
+
+Clone this repo and copy `bin` directory into your bin folder local.
+```sh
+# Example
+# /usr/local/bin
+usr
+|-- local
+|   |-- bin
+|   |   |-- mysql
+|   |   |-- php
+|   |   |-- php74
+|   |   |-- nginx
+```
+
+In your `zsh`, `bash` or any profile export bin path. Example in my `~/zshrc`
+```sh
+export PATH="/usr/local/bin:$PATH"
+```
+> Remenber run permission executable for `mysql`, `php`, `php74` and `nginx` file, `sudo chrmod +x <file>`
+
+## Laradock
+```sh
+Users
+|-- ITHep
+|   |-- Code
+|   |   |-- Env
+|   |   |   |-- Laradock
+|   |   |-- Work
+|   |   |-- Study
+|   |   |-- Foo :))
+```
+
+```sh
+# Laradock env
+APP_CODE_PATH_HOST=../../
+APP_CODE_PATH_CONTAINER=/var/www
+```
+
+# Foo
+- [About my git note](https://github.com/thep200/git.git)
+- 1 + n PHP Version in docker [here](https://msirius.medium.com/1-n-php-versions-and-projects-via-laradock-51938b337071)

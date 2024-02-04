@@ -1,0 +1,21 @@
+# Current dir
+current_directory=$(pwd)
+
+# Current folder
+current_folder=$(basename "$current_directory")
+# Parent folder
+parent_folder=$(basename "$(dirname "$current_directory")")
+
+# Container id
+container_id="laradock-php-fpm-7.4-1"
+
+# Build command
+cd_to_current_dir_command="cd $parent_folder/$current_folder"
+php_command="php $@"
+if [ "$#" -eq 0 ]; then
+    php_command="php -v"
+fi
+command="$cd_to_current_dir_command && $php_command"
+
+# Execute
+docker exec -it $container_id bash -c "$command"

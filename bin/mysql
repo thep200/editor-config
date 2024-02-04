@@ -1,0 +1,11 @@
+# Mysql container id
+container_id=laradock-mysql-1
+
+# Build command
+mysql_command="mysql $@"
+if [ "$#" -eq 0 ]; then
+    mysql_command="mysql -V"
+fi
+
+# Execute
+docker exec -it $container_id bash -c "$mysql_command"

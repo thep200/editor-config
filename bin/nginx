@@ -1,0 +1,11 @@
+# Nginx container id
+container_id=laradock-nginx-1
+
+# Build command
+nginx_command="nginx $@"
+if [ "$#" -eq 0 ]; then
+    nginx_command="nginx -v"
+fi
+
+# Execute
+docker exec -it $container_id bash -c "$nginx_command"
