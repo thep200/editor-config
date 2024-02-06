@@ -5,7 +5,7 @@ depth=2
 # Command
 command="php -v"
 # Container id
-container_id="laradock-php-fpm-7.4-1"
+container_id="laradock-php-fpm-1"
 # Parameter
 first_param="run"
 
