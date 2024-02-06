@@ -2,18 +2,6 @@
 root_code_dir="$HOME/Code"
 # Depth retreive folder
 depth=2
-# Command
-command="php -v"
-# Container id
-container_id="laradock-php-fpm-7.4-1"
-# Parameter
-first_param="run"
-
-# Function
-execContainer() {
-    docker exec -it $container_id bash -c "$command"
-    exit
-}
 
 # Check root code directory is existed
 if [ ! -d "$root_code_dir" ]; then
@@ -39,11 +27,25 @@ if [ "$tele_target" == "$PWD" ]; then
     exit
 fi
 
-# Process command
-if [ "$1" == "$first_param" ] && [ "$#" -gt 1 ]; then
-    command="cd $tele_target && $(echo "$@" | sed "s|$first_param |""|")"
-else
-    command="cd $tele_target && php $@"
+if [ "$#" == 0 ]; then
+    echo "Specific container name is required (--php74 or phpfpm)"
+    exit
 fi
 
-execContainer
+fruit="apple"
+
+container=$(echo "${@: -1}")
+command="cd $tele_target && $(echo "$@" | sed "s| $container|""|")"
+case $container in
+    "--php74")
+        container_id="laradock-php-fpm-7.4-1"
+        docker exec -it $container_id bash -c "$command"
+        ;;
+    "--phpfpm")
+        container_id="laradock-php-fpm-1"
+        docker exec -it $container_id bash -c "$command"
+        ;;
+    *)
+        echo "Specific is invalid"
+        ;;
+esac

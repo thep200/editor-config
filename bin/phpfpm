@@ -40,14 +40,10 @@ if [ "$tele_target" == "$PWD" ]; then
 fi
 
 # Process command
-if [ "$#" == 0 ]; then
-    execContainer
+if [ "$1" == "$first_param" ] && [ "$#" -gt 1 ]; then
+    command="cd $tele_target && $(echo "$@" | sed "s|$first_param |""|")"
+else
+    command="cd $tele_target && php $@"
 fi
 
-if [ "$1" == "$first_param" ]; then
-    command=$([ "$#" -gt 1 ] && echo "$(echo "$@" | sed "s|$first_param |""|")" || echo "php -v")
-    execContainer
-fi
-
-command="cd $tele_target && php $@"
 execContainer
