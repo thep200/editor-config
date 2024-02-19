@@ -9,6 +9,7 @@
     "editor.cursorBlinking": "expand",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
+    "editor.stickyScroll.enabled": true,
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
 
@@ -140,7 +141,6 @@
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
-    "workbench.activityBar.location": "hidden",
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Default Dark+",
     "workbench.layoutControl.enabled": false,
@@ -170,6 +170,7 @@
         "menu.selectionBorder": "#191b23",
         "panel.border": "#191b23",
         "editorSuggestWidget.border": "#191b23",
+        "scrollbar.shadow": "#191b23",
 
         // Current line highlight handle
         "editor.hoverHighlightBackground": "#1F6FEB10",
@@ -197,6 +198,10 @@
         // Profile badge highlight handel
         "profileBadge.foreground":"#FFF",
         "profileBadge.background":"#187a46",
+
+        // Sticky effect handle
+        "editorStickyScroll.shadow": "#191b23",
+        "editorStickyScrollHover.background": "#1E90FF20",
 
         // Widget color handle
         "editorWidget.border": "#1F6FEB",
@@ -231,19 +236,18 @@
         "terminal.integrated.fontWeight",
         "vscode_custom_css.imports"
     ],
-    "window.zoomLevel": -0.5,
     "editor.fontSize": 17,
     "editor.lineHeight": 4,
     "editor.letterSpacing": 1.75,
     "terminal.integrated.fontSize": 17,
-    "terminal.integrated.letterSpacing": 1.95,
-    "editor.fontWeight": "450",
-    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.letterSpacing": 1.75,
+    "editor.fontWeight": "500",
+    "terminal.integrated.fontWeight": "500",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
     "vscode_custom_css.imports": [
-        "file:///Users/thep200/Code/Study/editor-config/themes/style.css",
+        "file:///Users/thep200/sync-editor-config/themes/style.css",
         "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
     ],
 
@@ -286,6 +290,7 @@
     "unocss.colorPreview": false,
     "unocss.underline": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
+    "window.zoomLevel": -1,
     "editor.accessibilitySupport": "off",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
