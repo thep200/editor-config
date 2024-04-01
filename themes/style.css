@@ -29,13 +29,26 @@
     margin-left: 20px !important;
 }
 
+/* Keyword */
 .mtk22 {
-    background: linear-gradient(90deg, #ff7b72 0%, #ff9d96 100%);
+    background: linear-gradient(90deg, #ff9b90 0%, #ff7b72 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* Class, interface */
+.mtk26 {
+    background: linear-gradient(90deg, #FFBB90 -10%, #FF9F50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* String */
+/* .mtk20 {  } */
+
+/* Function */
 .mtk15 {
     color: #FFF;
     text-shadow: 0 0 1px #6A5ACD,

@@ -31,7 +31,7 @@
         "strings": "on"
     },
 
-        // Editor color
+    // Editor color
     "editor.tokenColorCustomizations":
     {
         "textMateRules": [
@@ -41,7 +41,7 @@
                     "punctuation.definition.string"
                 ],
                 "settings": {
-                    "foreground": "#A2D2FB",
+                    "foreground": "#A5D6FF",
                 }
             },
             {
@@ -64,7 +64,7 @@
                     "constant.character.escape"
                 ],
                 "settings": {
-                    "foreground": "#FA7970",
+                    "foreground": "#FF7B72",
                     "fontStyle": "italic bold"
                 }
             },
@@ -74,17 +74,18 @@
                     "entity.name.tag",
                     "support.class.component",
                     "support.type.property-name",
+                    "punctuation.section.embedded.begin.php",
                     "support.type.vendored.property-name.css",
                 ],
                 "settings": {
-                    "foreground": "#7CE38B",
+                    "foreground": "#7EE787",
                 }
             },
             {
                 "scope": [
                     "variable.language",
                     "constant.other",
-                    "support.class",
+                    "entity.name.type.namespace",
                     "support.other.namespace",
                     "variable.other.constant",
                     "entity.name.namespace",
@@ -95,7 +96,7 @@
                     "entity.name.tag.css"
                 ],
                 "settings": {
-                    "foreground": "#77BDFB",
+                    "foreground": "#80B8ff",
                 }
             },
             {
@@ -114,6 +115,7 @@
                 "scope": [
                     "constant.numeric",
                     "constant.language",
+                    "support.class",
                     "entity.name.type",
                     "entity.other.inherited-class",
                     "punctuation.definition.template-expression.begin",
@@ -122,7 +124,7 @@
                     "constant.other.color.rgb-value.hex.css"
                 ],
                 "settings": {
-                    "foreground": "#FAA356",
+                    "foreground": "#FF9F50",
                 }
             },
             {
@@ -132,7 +134,7 @@
                     "keyword.control.conditional.vue",
                 ],
                 "settings": {
-                    "foreground": "#CEA5FB",
+                    "foreground": "#D2A8FF",
                 }
             }
         ]
@@ -147,7 +149,6 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
-    "workbench.editor.showTabs": "none",
     "workbench.colorCustomizations":
     {
         // Themes color
@@ -161,8 +162,6 @@
         "titleBar.activeBackground": "#191b23",
         "titleBar.border": "#191b23",
         "titleBar.inactiveBackground": "#191b23",
-        "peekViewEditorGutter.background": "#191b23",
-        "peekViewEditor.background": "#191b23",
         "terminal.background": "#191b23",
         "activityBar.background": "#191b23",
         "notifications.background": "#191b23",
@@ -171,6 +170,12 @@
         "panel.border": "#191b23",
         "editorSuggestWidget.border": "#191b23",
         "scrollbar.shadow": "#191b23",
+
+        // Peek color handle
+        "peekViewEditor.background": "#191b23",
+        "peekViewEditorGutter.background": "#191b23",
+        "peekViewTitle.background": "#191b23",
+        "peekViewResult.background": "#191b23",
 
         // Current line highlight handle
         "editor.hoverHighlightBackground": "#1F6FEB10",
@@ -205,6 +210,9 @@
 
         // Widget color handle
         "editorWidget.border": "#1F6FEB",
+
+        // Input handle color
+        "input.border": "#1F6FEB"
     },
 
     // Files
@@ -212,6 +220,11 @@
     "files.autoSaveDelay": 500,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+
+    // Search
+    "search.useIgnoreFiles": false,
+    "search.useParentIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true,
 
     // zenMode
     "zenMode.restore": true,
@@ -237,7 +250,7 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 17,
-    "editor.lineHeight": 4,
+    "editor.lineHeight": 4.5,
     "editor.letterSpacing": 1.75,
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.letterSpacing": 1.75,
@@ -292,11 +305,12 @@
     "workbench.iconTheme": "eq-material-theme-icons-light",
     "window.zoomLevel": -1,
     "editor.accessibilitySupport": "off",
+    "editor.minimap.renderCharacters": false,
+    "intelephense.rename.namespaceMode": "all",
+    "workbench.editor.showTabs": "none",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": false,
-    "json.schemas": [
-    ],
 }
