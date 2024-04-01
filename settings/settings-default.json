@@ -55,6 +55,7 @@
             },
             {
                 "scope": [
+                    "string.regexp",
                     "storage.modifier",
                     "storage.type",
                     "keyword",
@@ -255,12 +256,12 @@
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.letterSpacing": 1.75,
     "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontWeight": "600",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
     "vscode_custom_css.imports": [
-        "file:///Users/thep200/sync-editor-config/themes/style.css",
+        "file:///Users/thep200/Code/Study/editor-config/themes/style.css",
         "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
     ],
 
@@ -300,10 +301,7 @@
     ],
 
     // Daily settings change
-    "unocss.colorPreview": false,
-    "unocss.underline": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "window.zoomLevel": -1,
     "editor.accessibilitySupport": "off",
     "editor.minimap.renderCharacters": false,
     "intelephense.rename.namespaceMode": "all",
