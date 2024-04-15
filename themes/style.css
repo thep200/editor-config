@@ -39,7 +39,7 @@
 
 /* Class, interface */
 .mtk26 {
-    background: linear-gradient(90deg, #FFBB90 -30%, #FF9F50 100%);
+    background: linear-gradient(90deg, #FFBB90 -25%, #FF9F50 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
