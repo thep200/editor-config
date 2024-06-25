@@ -12,7 +12,6 @@
     "editor.stickyScroll.enabled": true,
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
-
     // Editor completely setting
     "editor.tabCompletion": "on",
     "editor.suggest.preview": true,
@@ -24,16 +23,13 @@
     "editor.wordBasedSuggestions": "allDocuments",
     "editor.parameterHints.enabled": true,
     "editor.quickSuggestionsDelay": 5,
-    "editor.quickSuggestions":
-    {
+    "editor.quickSuggestions": {
         "other": "on",
         "comments": "on",
         "strings": "on"
     },
-
     // Editor color
-    "editor.tokenColorCustomizations":
-    {
+    "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": [
@@ -41,7 +37,7 @@
                     "punctuation.definition.string"
                 ],
                 "settings": {
-                    "foreground": "#A5D6FF",
+                    "foreground": "#A5D6FF"
                 }
             },
             {
@@ -74,10 +70,10 @@
                     "entity.name.tag",
                     "support.class.component",
                     "support.type.property-name",
-                    "support.type.vendored.property-name.css",
+                    "support.type.vendored.property-name.css"
                 ],
                 "settings": {
-                    "foreground": "#7EE787",
+                    "foreground": "#7EE787"
                 }
             },
             {
@@ -93,10 +89,11 @@
                     "entity.other.attribute-name.pseudo-class.css",
                     "entity.other.attribute-name.id.css",
                     "punctuation.section.embedded.begin.php",
-                    "entity.name.tag.css"
+                    "entity.name.tag.css",
+                    "support.class"
                 ],
                 "settings": {
-                    "foreground": "#80B8ff",
+                    "foreground": "#80B8ff"
                 }
             },
             {
@@ -105,17 +102,16 @@
                     "text.html",
                     "punctuation.definition.tag",
                     "punctuation.separator.inheritance",
-                    "invalid.illegal.character-not-allowed-here.html",
+                    "invalid.illegal.character-not-allowed-here.html"
                 ],
                 "settings": {
-                    "foreground": "#E6EDF3",
+                    "foreground": "#E6EDF3"
                 }
             },
             {
                 "scope": [
                     "constant.numeric",
                     "constant.language",
-                    "support.class",
                     "entity.name.type",
                     "entity.other.inherited-class",
                     "punctuation.definition.template-expression.begin",
@@ -124,33 +120,27 @@
                     "constant.other.color.rgb-value.hex.css"
                 ],
                 "settings": {
-                    "foreground": "#FF9F50",
+                    "foreground": "#FF9F50"
                 }
             },
             {
                 "scope": [
                     "entity.other.attribute-name",
                     "keyword.control.loop.vue",
-                    "keyword.control.conditional.vue",
+                    "keyword.control.conditional.vue"
                 ],
                 "settings": {
-                    "foreground": "#D2A8FF",
+                    "foreground": "#D2A8FF"
                 }
             }
         ]
     },
-
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
-    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Default Dark+",
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
-    "workbench.colorCustomizations":
-    {
+    "workbench.colorCustomizations": {
         // Themes color
         "editor.background": "#191b23",
         "editorSuggestWidget.background": "#191b23",
@@ -170,71 +160,55 @@
         "panel.border": "#191b23",
         "editorSuggestWidget.border": "#191b23",
         "scrollbar.shadow": "#191b23",
-
         // Peek color handle
         "peekViewEditor.background": "#191b23",
         "peekViewEditorGutter.background": "#191b23",
         "peekViewTitle.background": "#191b23",
         "peekViewResult.background": "#191b23",
-
         // Current line highlight handle
         "editor.hoverHighlightBackground": "#1F6FEB10",
         "editor.lineHighlightBackground": "#1F6FEB10",
-
         // Select work color highlight handel
         "editor.selectionBackground": "#1F6FEB50",
         "editor.wordHighlightBackground": "#1F6FEB30",
         "editor.selectionHighlightBackground": "#1F6FEB10",
-
         // Find word color highlight handel
         "editor.findMatchHighlightBackground": "#1F6FEB20",
         "editor.findMatchBackground": "#1F6FEB60",
-
         // Backet match color highlight handel
         "editorBracketMatch.border": "#1F6FEB",
         "editorBracketMatch.background": "#1F6FEB50",
-
         // Files selection color highlight handle
         "list.hoverForeground": "#FFF",
         "list.inactiveSelectionForeground": "#FFF",
         "list.hoverBackground": "#1F6FEB30",
         "list.inactiveSelectionBackground": "#1E90FF50",
-
         // Profile badge highlight handel
-        "profileBadge.foreground":"#FFF",
-        "profileBadge.background":"#187a46",
-
+        "profileBadge.foreground": "#FFF",
+        "profileBadge.background": "#187a46",
         // Sticky effect handle
         "editorStickyScroll.shadow": "#191b23",
         "editorStickyScrollHover.background": "#1E90FF20",
-
         // Widget color handle
-        "editorWidget.border": "#1F6FEB",
-
+        "editorWidget.border": "#191b23",
         // Input handle color
         "input.border": "#1F6FEB"
     },
-
     // Files
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-
     // Search
     "search.useIgnoreFiles": false,
     "search.useParentIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
-
     // zenMode
     "zenMode.restore": true,
     "zenMode.showTabs": "none",
-
     // Others
     "diffEditor.ignoreTrimWhitespace": false,
     "window.commandCenter": false,
-    "window.customTitleBarVisibility": "never",
-
     // Not Synced settings
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
@@ -249,11 +223,11 @@
         "terminal.integrated.fontWeight",
         "vscode_custom_css.imports"
     ],
-    "editor.fontSize": 17,
-    "editor.lineHeight": 4.5,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 4,
     "editor.letterSpacing": 1.75,
-    "terminal.integrated.fontSize": 17,
-    "terminal.integrated.letterSpacing": 1.75,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.letterSpacing": 1.5,
     "editor.fontWeight": "500",
     "terminal.integrated.fontWeight": "500",
     "editor.fontFamily": "Victor Mono",
@@ -261,18 +235,16 @@
     "terminal.integrated.fontFamily": "Victor Mono",
     "vscode_custom_css.imports": [
         "file:///Users/thep200/sync-editor-config/themes/style.css",
-        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
     ],
-
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
     // Mouse setting
     "editor.cursorStyle": "line-thin",
     "editor.cursorSmoothCaretAnimation": "on",
-    "terminal.integrated.cursorBlinking": true,
-
     // Explorer setting
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
     // Gitlen settings
     "diffEditor.codeLens": true,
     "gitlens.codeLens.enabled": false,
@@ -283,34 +255,39 @@
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 1,
+    "gitlens.blame.fontFamily": "Victor Mono",
+    "gitlens.currentLine.fontFamily": "Victor Mono",
+    "gitlens.blame.fontStyle": "italic",
+    "gitlens.currentLine.fontStyle": "italic",
+    "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
     "git.openRepositoryInParentFolders": "never",
-    "gitlens.currentLine.format": "🙄 ${author}, ${agoOrDate}",
-
     // PHP setting
+    "php.suggest.basic": true,
     "php.completion.parameters": "parentheses",
     "php.inlayHints.parameters.enabled": true,
     "php.inlayHints.types.return": true,
     "php.hover.fullname": true,
-    "php.linkedEditing.variables": true,
-    "php.workspace.includePath": "${workspaceFolder}",
-    "php.suggest.basic": true,
     "php.debug.port": [
         9003,
         9000
     ],
-
-    // Daily settings change
-    "unocss.colorPreview": false,
-    "unocss.underline": false,
-    "workbench.iconTheme": "eq-material-theme-icons-light",
-    "window.zoomLevel": -1,
-    "editor.accessibilitySupport": "off",
+    // Daily settings
+    "window.title": "🌀 ${activeEditorShort}",
     "editor.minimap.renderCharacters": false,
-    "intelephense.rename.namespaceMode": "all",
-    "workbench.editor.showTabs": "none",
     "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "hidden",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "editor.lineNumbers": "off",
+    "window.zoomLevel": -0.5,
+    "editor.accessibilitySupport": "on",
+    "workbench.editor.showTabs": "none",
+    "workbench.statusBar.visible": false,
+    "editor.stickyScroll.maxLineCount": 3,
+    "workbench.activityBar.location": "hidden",
+    "breadcrumbs.enabled": false,
+    "workbench.sideBar.location": "right",
 }

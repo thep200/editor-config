@@ -1,12 +1,7 @@
-/* Hide window title */
-.window-title {
+/* Top bar of primary side bar */
+/* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
     display: none;
-}
-
-/* Hide top bar of primary side bar */
-#workbench\.parts\.sidebar > div.composite.title {
-    display: none;
-}
+} */
 
 /* Hide top bar terminal */
 #workbench\.parts\.panel > div.composite.title.has-composite-bar {
@@ -29,6 +24,15 @@
     margin-left: 20px !important;
 }
 
+/* Title bar background custom */
+/* #workbench\.parts\.titlebar { */
+    /* background-color: #ff9b90 !important; */
+    /* background: linear-gradient(90deg, rgba(25,27,35,1) 0%, rgba(20,135,78,1) 20%, rgba(25,27,35,1) 35%) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+/* } */
+
 /* Keyword */
 .mtk22 {
     background: linear-gradient(90deg, #ff9b90 -10%, #ff7b72 100%);
@@ -44,9 +48,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* String */
-/* .mtk20 {  } */
 
 /* Function */
 .mtk15 {
