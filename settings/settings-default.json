@@ -23,6 +23,8 @@
     "editor.wordBasedSuggestions": "allDocuments",
     "editor.parameterHints.enabled": true,
     "editor.quickSuggestionsDelay": 5,
+    "editor.stickyScroll.maxLineCount": 3,
+    "editor.minimap.renderCharacters": false,
     "editor.quickSuggestions": {
         "other": "on",
         "comments": "on",
@@ -138,6 +140,8 @@
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
+    "workbench.statusBar.visible": false,
+    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
@@ -206,9 +210,13 @@
     // zenMode
     "zenMode.restore": true,
     "zenMode.showTabs": "none",
+    // Tab & breadcrumbs
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "none",
     // Others
-    "diffEditor.ignoreTrimWhitespace": false,
     "window.commandCenter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.title": "🌀 ${activeEditorShort}",
     // Not Synced settings
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
@@ -224,21 +232,22 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 4,
-    "editor.letterSpacing": 1.75,
+    "editor.lineHeight": 3.5,
+    "editor.letterSpacing": 1.5,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 1.5,
+    "terminal.integrated.letterSpacing": 2,
+    "editor.lineNumbers": "off",
     "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontWeight": "600",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
-    "vscode_custom_css.imports": [
-        "file:///Users/thep200/sync-editor-config/themes/style.css",
-        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
-    ],
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
+    "vscode_custom_css.imports": [
+        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css",
+        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+    ],
     // Mouse setting
     "editor.cursorStyle": "line-thin",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -272,22 +281,21 @@
         9000
     ],
     // Daily settings
-    "window.title": "🌀 ${activeEditorShort}",
-    "editor.minimap.renderCharacters": false,
     "editor.minimap.enabled": false,
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
-    },
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "editor.lineNumbers": "off",
-    "window.zoomLevel": -0.5,
     "editor.accessibilitySupport": "on",
-    "workbench.editor.showTabs": "none",
-    "workbench.statusBar.visible": false,
-    "editor.stickyScroll.maxLineCount": 3,
     "workbench.activityBar.location": "hidden",
-    "breadcrumbs.enabled": false,
-    "workbench.sideBar.location": "right",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "files.exclude": {
+        "**/.gitlab": true,
+        "**/.idea": true,
+        "**/.vscode": true
+    },
+    "files.watcherExclude": {
+        "**/vendor": true
+    },
 }
