@@ -215,8 +215,9 @@
     "workbench.editor.showTabs": "none",
     // Others
     "window.commandCenter": false,
+    "window.titleSeparator": " 🌀 ",
     "diffEditor.ignoreTrimWhitespace": false,
-    "window.title": "🌀 ${activeEditorShort}",
+    "window.title": " ${separator}${activeEditorShort}",
     // Not Synced settings
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
@@ -232,7 +233,7 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.5,
+    "editor.lineHeight": 3.55,
     "editor.letterSpacing": 1.5,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.letterSpacing": 2,
@@ -276,26 +277,24 @@
     "php.inlayHints.parameters.enabled": true,
     "php.inlayHints.types.return": true,
     "php.hover.fullname": true,
-    "php.debug.port": [
-        9003,
-        9000
-    ],
     // Daily settings
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "editor.accessibilitySupport": "on",
-    "workbench.activityBar.location": "hidden",
+    // Turn on/off sound
+    "editor.accessibilitySupport": "off",
+    "php.debug.port": [
+        9003,
+        9000
+    ],
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
-    "files.exclude": {
-        "**/.gitlab": true,
-        "**/.idea": true,
-        "**/.vscode": true
-    },
-    "files.watcherExclude": {
+    "search.exclude": {
         "**/vendor": true
     },
+    "workbench.activityBar.location": "hidden",
+    "github.copilot.chat.welcomeMessage": "never",
+    "github.copilot.editor.enableCodeActions": false,
 }
