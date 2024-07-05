@@ -140,15 +140,12 @@
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
-    "workbench.statusBar.visible": false,
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
         // Themes color
         "editor.background": "#191b23",
-        "editorSuggestWidget.background": "#191b23",
-        "editorWidget.background": "#191b23",
         "menu.background": "#191b23",
         "sideBar.background": "#191b23",
         "sideBar.border": "#191b23",
@@ -162,41 +159,45 @@
         "terminal.border": "#191b23",
         "menu.selectionBorder": "#191b23",
         "panel.border": "#191b23",
-        "editorSuggestWidget.border": "#191b23",
         "scrollbar.shadow": "#191b23",
-        // Peek color handle
+        // Peek
         "peekViewEditor.background": "#191b23",
         "peekViewEditorGutter.background": "#191b23",
         "peekViewTitle.background": "#191b23",
         "peekViewResult.background": "#191b23",
-        // Current line highlight handle
+        // Current line
         "editor.hoverHighlightBackground": "#1F6FEB10",
         "editor.lineHighlightBackground": "#1F6FEB10",
-        // Select work color highlight handel
+        // Select word
         "editor.selectionBackground": "#1F6FEB50",
         "editor.wordHighlightBackground": "#1F6FEB30",
         "editor.selectionHighlightBackground": "#1F6FEB10",
-        // Find word color highlight handel
+        // Find word
         "editor.findMatchHighlightBackground": "#1F6FEB20",
         "editor.findMatchBackground": "#1F6FEB60",
-        // Backet match color highlight handel
+        // Bracket
         "editorBracketMatch.border": "#1F6FEB",
         "editorBracketMatch.background": "#1F6FEB50",
-        // Files selection color highlight handle
+        // Files selection
         "list.hoverForeground": "#FFF",
         "list.inactiveSelectionForeground": "#FFF",
         "list.hoverBackground": "#1F6FEB30",
         "list.inactiveSelectionBackground": "#1E90FF50",
-        // Profile badge highlight handel
+        // Profile
         "profileBadge.foreground": "#FFF",
         "profileBadge.background": "#187a46",
-        // Sticky effect handle
+        // Sticky
         "editorStickyScroll.shadow": "#191b23",
         "editorStickyScrollHover.background": "#1E90FF20",
-        // Widget color handle
-        "editorWidget.border": "#191b23",
-        // Input handle color
-        "input.border": "#1F6FEB"
+        // Widget
+        "editorWidget.border": "#1F6FEB",
+        "editorWidget.background": "#191b23",
+        "editorSuggestWidget.border": "#1F6FEB",
+        "editorSuggestWidget.background": "#191b23",
+        // Input
+        "input.border": "#1F6FEB",
+        // Notification
+        "notificationToast.border": "#1F6FEB",
     },
     // Files
     "files.autoSave": "afterDelay",
@@ -294,7 +295,7 @@
     "search.exclude": {
         "**/vendor": true
     },
-    "workbench.activityBar.location": "hidden",
     "github.copilot.chat.welcomeMessage": "never",
-    "github.copilot.editor.enableCodeActions": false,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
 }

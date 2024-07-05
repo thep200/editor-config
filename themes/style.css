@@ -3,6 +3,7 @@
     display: none;
 }
 
+/* Hover notification */
 div.notification-list-item.expanded:hover {
     background-color: #191b23 !important;
 }
