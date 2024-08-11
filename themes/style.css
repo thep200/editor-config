@@ -1,54 +1,62 @@
 /* Top bar of primary side bar */
-#workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
+/* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
     display: none;
-}
+} */
 
 /* Hover notification */
-div.notification-list-item.expanded:hover {
+/* div.notification-list-item.expanded:hover {
     background-color: #191b23 !important;
-}
+} */
 
 /* Hide top bar terminal */
 #workbench\.parts\.panel > div.composite.title.has-composite-bar {
     display: none;
 }
 
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
+/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
     display: none;
-}
+} */
 
-.tabs-and-actions-container {
+/* .tabs-and-actions-container {
     background-color: #121212;
-}
+} */
 
-.button-link {
+/* .button-link {
     transition: 0.45s;
 }
 
 .button-link:hover {
     margin-left: 20px !important;
-}
+} */
 
 /* Title bar background custom */
-/* #workbench\.parts\.titlebar { */
-    /* background-color: #ff9b90 !important; */
-    /* background: linear-gradient(90deg, rgba(25,27,35,1) 0%, rgba(20,135,78,1) 20%, rgba(25,27,35,1) 35%) !important;
+/* #workbench\.parts\.titlebar {
+    background-color: #ff9b90 !important;
+    background: linear-gradient(90deg, rgba(25,27,35,1) 0%, rgba(20,135,78,1) 20%, rgba(25,27,35,1) 35%) !important;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-/* } */
+    -webkit-text-fill-color: transparent;
+} */
 
 /* Keyword */
-.mtk22 {
+/* .mtk22 {
     background: linear-gradient(90deg, #ff9b90 -10%, #ff7b72 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 /* Class, interface */
-.mtk26 {
+/* .mtk26 {
     background: linear-gradient(90deg, #FFBB90 -25%, #FF9F50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* Class */
+.mtk16 {
+    background: linear-gradient(90deg, #0d9488 -10%, #22c55e 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

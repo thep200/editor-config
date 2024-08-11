@@ -36,15 +36,23 @@
             {
                 "scope": [
                     "string",
-                    "punctuation.definition.string"
                 ],
                 "settings": {
-                    "foreground": "#A5D6FF"
+                    "foreground": "#7EE787",
+                    "fontStyle": "italic"
                 }
             },
             {
                 "scope": [
-                    "comment"
+                    "constant.numeric"
+                ],
+                "settings": {
+                    "foreground": "#FF7B72",
+                }
+            },
+            {
+                "scope": [
+                    "comment",
                 ],
                 "settings": {
                     "foreground": "#8B949E",
@@ -53,151 +61,115 @@
             },
             {
                 "scope": [
-                    "storage.modifier",
-                    "storage.type",
                     "keyword",
+                    "storage.type",
                     "keyword.control",
                     "keyword.operator",
+                    "storage.modifier",
                     "keyword.other.unit",
                     "constant.character.escape"
                 ],
                 "settings": {
-                    "foreground": "#FF7B72",
                     "fontStyle": "italic bold"
                 }
             },
             {
                 "scope": [
-                    "support.type",
-                    "entity.name.tag",
-                    "support.class.component",
-                    "support.type.property-name",
-                    "support.type.vendored.property-name.css"
+                    "variable"
                 ],
                 "settings": {
-                    "foreground": "#7EE787"
+                    "foreground": "#0d9488",
                 }
             },
             {
                 "scope": [
-                    "variable.language",
-                    "constant.other",
-                    "entity.name.type.namespace",
-                    "support.other.namespace",
-                    "variable.other.constant",
-                    "entity.name.namespace",
-                    "punctuation.definition.variable",
-                    "entity.other.attribute-name.class.css",
-                    "entity.other.attribute-name.pseudo-class.css",
-                    "entity.other.attribute-name.id.css",
-                    "punctuation.section.embedded.begin.php",
-                    "entity.name.tag.css",
-                    "support.class"
+                    "keyword.control",
+                    "keyword.control.loop.vue",
+                    "entity.other.attribute-name",
+                    "keyword.control.conditional.vue"
                 ],
                 "settings": {
-                    "foreground": "#80B8ff"
+                    "foreground": "#c4b5fd"
                 }
             },
             {
                 "scope": [
-                    "variable",
-                    "text.html",
-                    "punctuation.definition.tag",
-                    "punctuation.separator.inheritance",
-                    "invalid.illegal.character-not-allowed-here.html"
-                ],
-                "settings": {
-                    "foreground": "#E6EDF3"
-                }
-            },
-            {
-                "scope": [
-                    "constant.numeric",
-                    "constant.language",
-                    "entity.name.type",
-                    "entity.other.inherited-class",
-                    "punctuation.definition.template-expression.begin",
-                    "punctuation.definition.template-expression.end",
                     "support.constant.property-value.css",
-                    "constant.other.color.rgb-value.hex.css"
+                    "constant.other.color.rgb-value.hex.css",
+                    "punctuation.definition.template-expression.end",
+                    "punctuation.definition.template-expression.begin",
                 ],
                 "settings": {
                     "foreground": "#FF9F50"
                 }
             },
-            {
-                "scope": [
-                    "entity.other.attribute-name",
-                    "keyword.control.loop.vue",
-                    "keyword.control.conditional.vue"
-                ],
-                "settings": {
-                    "foreground": "#D2A8FF"
-                }
-            }
         ]
     },
+
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
         // Themes color
-        "editor.background": "#191b23",
-        "menu.background": "#191b23",
-        "sideBar.background": "#191b23",
-        "sideBar.border": "#191b23",
-        "sideBarSectionHeader.background": "#191b23",
-        "titleBar.activeBackground": "#191b23",
-        "titleBar.border": "#191b23",
-        "titleBar.inactiveBackground": "#191b23",
-        "terminal.background": "#191b23",
-        "activityBar.background": "#191b23",
-        "notifications.background": "#191b23",
-        "terminal.border": "#191b23",
-        "menu.selectionBorder": "#191b23",
-        "panel.border": "#191b23",
-        "scrollbar.shadow": "#191b23",
+        "panel.border": "#1e1e1e",
+        "sideBar.border": "#1e1e1e",
+        "terminal.border": "#1e1e1e",
+        "menu.background": "#1e1e1e",
+        "titleBar.border": "#1e1e1e",
+        "scrollbar.shadow": "#1e1e1e",
+        "editor.background": "#1e1e1e",
+        "sideBar.background": "#1e1e1e",
+        "terminal.background": "#1e1e1e",
+        "menu.selectionBorder": "#1e1e1e",
+        "activityBar.background": "#1e1e1e",
+        "notifications.background": "#1e1e1e",
+        "titleBar.activeBackground": "#1e1e1e",
+        "titleBar.inactiveBackground": "#1e1e1e",
+        "sideBarSectionHeader.background": "#1e1e1e",
         // Peek
-        "peekViewEditor.background": "#191b23",
-        "peekViewEditorGutter.background": "#191b23",
-        "peekViewTitle.background": "#191b23",
-        "peekViewResult.background": "#191b23",
+        "peekViewTitle.background": "#1e1e1e",
+        "peekViewResult.background": "#1e1e1e",
+        "peekViewEditor.background": "#1e1e1e",
+        "peekViewEditorGutter.background": "#1e1e1e",
         // Current line
-        "editor.hoverHighlightBackground": "#1F6FEB10",
-        "editor.lineHighlightBackground": "#1F6FEB10",
+        "editor.lineHighlightBackground": "#64748b10",
+        "editor.hoverHighlightBackground": "#64748b10",
         // Select word
-        "editor.selectionBackground": "#1F6FEB50",
-        "editor.wordHighlightBackground": "#1F6FEB30",
-        "editor.selectionHighlightBackground": "#1F6FEB10",
+        "editor.selectionBackground": "#64748b50",
+        "editor.wordHighlightBackground": "#64748b30",
+        "editor.selectionHighlightBackground": "#64748b10",
         // Find word
-        "editor.findMatchHighlightBackground": "#1F6FEB20",
-        "editor.findMatchBackground": "#1F6FEB60",
+        "editor.findMatchBackground": "#64748b60",
+        "editor.findMatchHighlightBackground": "#64748b20",
         // Bracket
-        "editorBracketMatch.border": "#1F6FEB",
-        "editorBracketMatch.background": "#1F6FEB50",
+        "editorBracketMatch.border": "#64748b",
+        "editorBracketMatch.background": "#64748b50",
         // Files selection
         "list.hoverForeground": "#FFF",
+        "list.hoverBackground": "#64748b30",
+        "list.inactiveFocusOutline": "#64748b",
+        "list.focusAndSelectionOutline": "#64748b",
+        "list.activeSelectionForeground": "#FFF",
+        "list.activeSelectionBackground": "#64748b50",
         "list.inactiveSelectionForeground": "#FFF",
-        "list.hoverBackground": "#1F6FEB30",
-        "list.inactiveSelectionBackground": "#1E90FF50",
+        "list.inactiveSelectionBackground": "#64748b50",
+        // Sticky
+        "editorStickyScroll.shadow": "#1e1e1e",
+        "editorStickyScrollHover.background": "#64748b20",
+        // Widget
+        "editorWidget.border": "#64748b",
+        "editorWidget.background": "#1e1e1e",
+        "editorSuggestWidget.border": "#64748b",
+        "editorSuggestWidget.background": "#1e1e1e",
+        // Input
+        "input.border": "#64748b",
+        // Notification
+        "notificationToast.border": "#64748b",
         // Profile
         "profileBadge.foreground": "#FFF",
         "profileBadge.background": "#187a46",
-        // Sticky
-        "editorStickyScroll.shadow": "#191b23",
-        "editorStickyScrollHover.background": "#1E90FF20",
-        // Widget
-        "editorWidget.border": "#1F6FEB",
-        "editorWidget.background": "#191b23",
-        "editorSuggestWidget.border": "#1F6FEB",
-        "editorSuggestWidget.background": "#191b23",
-        // Input
-        "input.border": "#1F6FEB",
-        // Notification
-        "notificationToast.border": "#1F6FEB",
     },
     // Files
     "files.autoSave": "afterDelay",
@@ -216,7 +188,7 @@
     "workbench.editor.showTabs": "none",
     // Others
     "window.commandCenter": false,
-    "window.titleSeparator": " 🌀 ",
+    "window.titleSeparator": " 🦣 ",
     "diffEditor.ignoreTrimWhitespace": false,
     "window.title": " ${separator}${activeEditorShort}",
     // Not Synced settings
@@ -234,7 +206,7 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.55,
+    "editor.lineHeight": 3.25,
     "editor.letterSpacing": 1.5,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.letterSpacing": 2,
@@ -284,7 +256,7 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.iconTheme": "eq-material-theme-icons-light",
     // Turn on/off sound
-    "editor.accessibilitySupport": "off",
+    "editor.accessibilitySupport": "on",
     "php.debug.port": [
         9003,
         9000
@@ -297,5 +269,7 @@
     },
     "github.copilot.chat.welcomeMessage": "never",
     "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "Default Dark+",
+    "editor.inlayHints.enabled": "onUnlessPressed",
     "workbench.activityBar.location": "hidden",
 }
