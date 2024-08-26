@@ -10,9 +10,12 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.stickyScroll.enabled": true,
+    "editor.cursorStyle": "line-thin",
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
-    // Editor completely setting
+    // Suggestions
     "editor.tabCompletion": "on",
     "editor.suggest.preview": true,
     "editor.suggest.localityBonus": true,
@@ -30,75 +33,49 @@
         "comments": "on",
         "strings": "on"
     },
-    // Editor color
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "string",
-                ],
-                "settings": {
-                    "foreground": "#7EE787",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    "constant.numeric"
-                ],
-                "settings": {
-                    "foreground": "#FF7B72",
-                }
-            },
-            {
-                "scope": [
-                    "comment",
-                ],
-                "settings": {
-                    "foreground": "#8B949E",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    "keyword",
-                    "storage.type",
-                    "keyword.control",
-                    "keyword.operator",
-                    "storage.modifier",
-                    "keyword.other.unit",
-                    "constant.character.escape"
-                ],
-                "settings": {
-                    "fontStyle": "italic bold"
-                }
-            },
-            {
-                "scope": [
-                    "keyword.control",
-                    "keyword.control.loop.vue",
-                    "entity.other.attribute-name",
-                    "keyword.control.conditional.vue",
-                    "entity.other.attribute-name.class.css",
-                    "entity.other.attribute-name.id.css"
-                ],
-                "settings": {
-                    "foreground": "#c4b5fd"
-                }
-            },
-            {
-                "scope": [
-                    "support.constant.property-value.css",
-                    "constant.other.color.rgb-value.hex.css",
-                    "punctuation.definition.template-expression.end",
-                    "punctuation.definition.template-expression.begin",
-                ],
-                "settings": {
-                    "foreground": "#FF9F50"
-                }
-            },
-        ]
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    // Search
+    "search.useIgnoreFiles": false,
+    "search.useParentIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true,
+    "search.exclude": {
+        "**/vendor": true
     },
+    // zenMode
+    "zenMode.restore": true,
+    "zenMode.showTabs": "none",
+    // Tab & breadcrumbs
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "none",
+    // Others
+    "window.commandCenter": false,
+    "window.titleSeparator": " 🦣 ",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.title": " ${separator}${activeEditorShort}",
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // Git
+    "diffEditor.codeLens": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.virtualRepositories.enabled": false,
+    "gitlens.advanced.repositorySearchDepth": 1,
+    "gitlens.blame.fontFamily": "Victor Mono",
+    "gitlens.currentLine.fontFamily": "Victor Mono",
+    "gitlens.blame.fontStyle": "italic",
+    "gitlens.currentLine.fontStyle": "italic",
+    "git.openRepositoryInParentFolders": "never",
+    "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
+    // Themes
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
@@ -164,31 +141,81 @@
         // Profile
         "profileBadge.foreground": "#FFF",
         "profileBadge.background": "#187a46",
-        // Gutter
+        // Editor
         "editorGutter.addedBackground": "#16a34a",
-        "editorGutter.modifiedBackground": "#ffa500",
+        "editorGutter.modifiedBackground": "#ffd700",
         "editorGutter.deletedBackground": "#ff0000",
     },
-    // Files
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    // Search
-    "search.useIgnoreFiles": false,
-    "search.useParentIgnoreFiles": true,
-    "search.useGlobalIgnoreFiles": true,
-    // zenMode
-    "zenMode.restore": true,
-    "zenMode.showTabs": "none",
-    // Tab & breadcrumbs
-    "breadcrumbs.enabled": false,
-    "workbench.editor.showTabs": "none",
-    // Others
-    "window.commandCenter": false,
-    // "window.titleSeparator": " 🦣 ",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "window.title": " ${separator}${activeEditorShort}",
+    // Editor
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "string",
+                ],
+                "settings": {
+                    "foreground": "#7EE787",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "constant.numeric",
+                ],
+                "settings": {
+                    "foreground": "#FF7B72",
+                }
+            },
+            {
+                "scope": [
+                    "comment",
+                ],
+                "settings": {
+                    "foreground": "#8B949E",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "keyword",
+                    "storage.type",
+                    "keyword.control",
+                    "keyword.operator",
+                    "storage.modifier",
+                    "keyword.other.unit",
+                    "constant.character.escape"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.control",
+                    "keyword.control.loop.vue",
+                    "entity.other.attribute-name",
+                    "keyword.control.conditional.vue",
+                    "entity.other.attribute-name.id.css",
+                    "entity.other.attribute-name.class.css"
+                ],
+                "settings": {
+                    "foreground": "#c4b5fd"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.other.unit",
+                    "support.constant.property-value.css",
+                    "constant.other.color.rgb-value.hex.css",
+                    "punctuation.definition.template-expression.end",
+                    "punctuation.definition.template-expression.begin",
+                ],
+                "settings": {
+                    "foreground": "#FF9F50"
+                }
+            },
+        ]
+    },
     // Not Synced settings
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
@@ -204,66 +231,34 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.75,
-    "editor.letterSpacing": 1.75,
+    "editor.lineHeight": 3.25,
+    "editor.letterSpacing": 1.5,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 1.5,
+    "terminal.integrated.letterSpacing": 2,
     "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontWeight": "600",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
-    "vscode_custom_css.imports": [
-        "file:///Users/thep200/sync-editor-config/themes/style.css",
-    ],
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "editor.lineNumbers": "off",
-    "window.zoomLevel": -0.5,
-    // Mouse
-    "editor.cursorStyle": "line-thin",
-    "editor.cursorSmoothCaretAnimation": "on",
-    // Explorer
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    // Gitlen
-    "diffEditor.codeLens": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.currentLine.pullRequests.enabled": false,
-    "gitlens.currentLine.scrollable": false,
-    "gitlens.showWelcomeOnInstall": false,
-    "gitlens.showWhatsNewAfterUpgrades": false,
-    "gitlens.virtualRepositories.enabled": false,
-    "gitlens.advanced.repositorySearchDepth": 1,
-    "gitlens.blame.fontFamily": "Victor Mono",
-    "gitlens.currentLine.fontFamily": "Victor Mono",
-    "gitlens.blame.fontStyle": "italic",
-    "gitlens.currentLine.fontStyle": "italic",
-    "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
-    "git.openRepositoryInParentFolders": "never",
-    // // PHP
+    "vscode_custom_css.imports": [
+        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css"
+    ],
+    // PHP
     // "php.suggest.basic": true,
     // "php.completion.parameters": "parentheses",
     // "php.inlayHints.parameters.enabled": true,
     // "php.inlayHints.types.return": true,
     // "php.hover.fullname": true,
-    // // Go
+    // Go
     // "go.inlayHints.parameterNames": true,
     // Daily settings
+    "github.copilot.chat.welcomeMessage": "never",
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
-    // Turn on/off sound
-    "editor.accessibilitySupport": "off",
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
-    },
-    "search.exclude": {
-        "**/vendor": true
-    },
-    "github.copilot.chat.welcomeMessage": "never",
     "workbench.statusBar.visible": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
-    "workbench.activityBar.location": "hidden",
 }
