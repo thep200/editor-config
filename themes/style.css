@@ -1,3 +1,27 @@
+/* Class */
+.mtk16 {
+    background: linear-gradient(90deg, #0d9488 -10%, #22c55e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Function */
+#mtk15 {
+    color: #FFF;
+    text-shadow: 0 0 1px #6A5ACD,
+        0 0 2px #483D8B,
+        0 0 2px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 3px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 5px #483D8B,
+        0 0 11px #483D8B,
+        0 0 11px #483D8B;
+}
+
 /* Top bar of primary side bar */
 /* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
     display: none;
@@ -53,27 +77,3 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
-
-/* Class */
-.mtk16 {
-    background: linear-gradient(90deg, #0d9488 -10%, #22c55e 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Function */
-.mtk15 {
-    color: #FFF;
-    text-shadow: 0 0 1px #6A5ACD,
-        0 0 2px #483D8B,
-        0 0 2px #483D8B,
-        0 0 3px #483D8B,
-        0 0 3px #483D8B,
-        0 0 3px #483D8B,
-        0 0 5px #483D8B,
-        0 0 5px #483D8B,
-        0 0 5px #483D8B,
-        0 0 11px #483D8B,
-        0 0 11px #483D8B;
-}

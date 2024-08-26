@@ -75,18 +75,12 @@
             },
             {
                 "scope": [
-                    "variable"
-                ],
-                "settings": {
-                    "foreground": "#0d9488",
-                }
-            },
-            {
-                "scope": [
                     "keyword.control",
                     "keyword.control.loop.vue",
                     "entity.other.attribute-name",
-                    "keyword.control.conditional.vue"
+                    "keyword.control.conditional.vue",
+                    "entity.other.attribute-name.class.css",
+                    "entity.other.attribute-name.id.css"
                 ],
                 "settings": {
                     "foreground": "#c4b5fd"
@@ -105,11 +99,11 @@
             },
         ]
     },
-
     // Workbench
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
     "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
         // Themes color
@@ -170,6 +164,10 @@
         // Profile
         "profileBadge.foreground": "#FFF",
         "profileBadge.background": "#187a46",
+        // Gutter
+        "editorGutter.addedBackground": "#16a34a",
+        "editorGutter.modifiedBackground": "#ffa500",
+        "editorGutter.deletedBackground": "#ff0000",
     },
     // Files
     "files.autoSave": "afterDelay",
@@ -188,7 +186,7 @@
     "workbench.editor.showTabs": "none",
     // Others
     "window.commandCenter": false,
-    "window.titleSeparator": " 🦣 ",
+    // "window.titleSeparator": " 🦣 ",
     "diffEditor.ignoreTrimWhitespace": false,
     "window.title": " ${separator}${activeEditorShort}",
     // Not Synced settings
@@ -206,29 +204,29 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.25,
-    "editor.letterSpacing": 1.5,
+    "editor.lineHeight": 3.75,
+    "editor.letterSpacing": 1.75,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 2,
-    "editor.lineNumbers": "off",
+    "terminal.integrated.letterSpacing": 1.5,
     "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.fontWeight": "500",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
+    "vscode_custom_css.imports": [
+        "file:///Users/thep200/sync-editor-config/themes/style.css",
+    ],
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
-    "vscode_custom_css.imports": [
-        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css",
-        "file:///Users/thep200/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
-    ],
-    // Mouse setting
+    "editor.lineNumbers": "off",
+    "window.zoomLevel": -0.5,
+    // Mouse
     "editor.cursorStyle": "line-thin",
     "editor.cursorSmoothCaretAnimation": "on",
-    // Explorer setting
+    // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    // Gitlen settings
+    // Gitlen
     "diffEditor.codeLens": true,
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
@@ -244,23 +242,20 @@
     "gitlens.currentLine.fontStyle": "italic",
     "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
     "git.openRepositoryInParentFolders": "never",
-    // PHP setting
-    "php.suggest.basic": true,
-    "php.completion.parameters": "parentheses",
-    "php.inlayHints.parameters.enabled": true,
-    "php.inlayHints.types.return": true,
-    "php.hover.fullname": true,
+    // // PHP
+    // "php.suggest.basic": true,
+    // "php.completion.parameters": "parentheses",
+    // "php.inlayHints.parameters.enabled": true,
+    // "php.inlayHints.types.return": true,
+    // "php.hover.fullname": true,
+    // // Go
+    // "go.inlayHints.parameterNames": true,
     // Daily settings
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.iconTheme": "eq-material-theme-icons-light",
     // Turn on/off sound
-    "editor.accessibilitySupport": "on",
-    "php.debug.port": [
-        9003,
-        9000
-    ],
+    "editor.accessibilitySupport": "off",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
@@ -269,7 +264,6 @@
     },
     "github.copilot.chat.welcomeMessage": "never",
     "workbench.statusBar.visible": false,
-    "workbench.colorTheme": "Default Dark+",
-    "editor.inlayHints.enabled": "onUnlessPressed",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
     "workbench.activityBar.location": "hidden",
 }
