@@ -5,6 +5,7 @@
     "editor.fastScrollSensitivity": 15,
     "editor.definitionLinkOpensInPeek": true,
     "editor.autoClosingQuotes": "always",
+    "editor.lineNumbers": "off",
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "expand",
     "editor.scrollbar.horizontal": "hidden",
@@ -59,6 +60,8 @@
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    // Terminal
+    "terminal.integrated.cursorStyle": "line",
     // Git
     "diffEditor.codeLens": true,
     "gitlens.codeLens.enabled": false,
@@ -231,30 +234,28 @@
         "vscode_custom_css.imports"
     ],
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.25,
-    "editor.letterSpacing": 1.5,
+    "editor.lineHeight": 3.75,
+    "editor.letterSpacing": 1.75,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 2,
+    "terminal.integrated.letterSpacing": 1.5,
     "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.fontWeight": "500",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,
-    "editor.lineNumbers": "off",
     "vscode_custom_css.imports": [
-        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css"
+        "file:///Users/thep200/sync-editor-config/themes/style.css"
     ],
-    // PHP
+    // // PHP
     // "php.suggest.basic": true,
     // "php.completion.parameters": "parentheses",
     // "php.inlayHints.parameters.enabled": true,
     // "php.inlayHints.types.return": true,
     // "php.hover.fullname": true,
-    // Go
+    // // Go
     // "go.inlayHints.parameterNames": true,
     // Daily settings
+    "window.zoomLevel": -0.5,
     "github.copilot.chat.welcomeMessage": "never",
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
