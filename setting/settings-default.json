@@ -19,6 +19,16 @@
     // Suggestions
     "editor.tabCompletion": "on",
     "editor.suggest.preview": true,
+    "editor.guides.indentation": true,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.suggest.filterGraceful": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showColors": true,
+    "editor.suggest.showConstants": true,
     "editor.suggest.localityBonus": true,
     "editor.suggest.shareSuggestSelections": true,
     "editor.suggest.showIcons": true,
@@ -54,8 +64,8 @@
     "workbench.editor.showTabs": "none",
     // Others
     "window.commandCenter": false,
-    "window.titleSeparator": " 🦣 ",
     "diffEditor.ignoreTrimWhitespace": false,
+    "window.titleSeparator": " 🥔 ",
     "window.title": " ${separator}${activeEditorShort}",
     // Explorer
     "explorer.confirmDelete": false,
@@ -219,7 +229,7 @@
             },
         ]
     },
-    // Not Synced settings
+    // Not sync settings
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
         "editor.fontFamily",
@@ -231,35 +241,33 @@
         "terminal.integrated.fontSize",
         "terminal.integrated.letterSpacing",
         "terminal.integrated.fontWeight",
-        "vscode_custom_css.imports"
+        "apc.imports"
     ],
+    // Not Synced settings
     "editor.fontSize": 14,
-    "editor.lineHeight": 3.75,
-    "editor.letterSpacing": 1.75,
+    "editor.lineHeight": 3.25,
+    "editor.letterSpacing": 1.5,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 1.5,
+    "terminal.integrated.letterSpacing": 2,
     "editor.fontWeight": "500",
     "terminal.integrated.fontWeight": "500",
     "editor.fontFamily": "Victor Mono",
     "editor.codeLensFontFamily": "Victor Mono",
     "terminal.integrated.fontFamily": "Victor Mono",
-    "vscode_custom_css.imports": [
-        "file:///Users/thep200/sync-editor-config/themes/style.css"
+    "apc.imports": [
+        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css",
+        "file:///Users/thep200/Projects/Study/editor-config/themes/script.js",
     ],
-    // // PHP
-    // "php.suggest.basic": true,
-    // "php.completion.parameters": "parentheses",
-    // "php.inlayHints.parameters.enabled": true,
-    // "php.inlayHints.types.return": true,
-    // "php.hover.fullname": true,
-    // // Go
-    // "go.inlayHints.parameterNames": true,
     // Daily settings
-    "window.zoomLevel": -0.5,
+    "symbols.folders.associations": {
+        "secret": "folder-auth"
+    },
     "github.copilot.chat.welcomeMessage": "never",
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.statusBar.visible": false,
-    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "workbench.activityBar.location": "hidden",
 }
