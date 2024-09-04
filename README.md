@@ -79,3 +79,8 @@ APP_CODE_PATH_CONTAINER=/var/www
 # Foo
 - [About my git note](https://github.com/thep200/git.git)
 - 1 + n PHP Version in docker [here](https://msirius.medium.com/1-n-php-versions-and-projects-via-laradock-51938b337071)
+
+# Terminal theme
+```sh
+echo -E "$(curl -fsSL https://raw.githubusercontent.com/zthxxx/jovial/master/jovial.zsh-theme)" > ~/.oh-my-zsh/themes/jovial.zsh-theme
+```

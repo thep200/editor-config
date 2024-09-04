@@ -1,14 +1,37 @@
-# Fig start block
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Amazon Q start
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 # Zsh config
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git)
+ZSH_THEME="jovial"
+plugins=(
+    git
+)
 source $ZSH/oh-my-zsh.sh
-DISABLE_AUTO_TITLE="true"
+# Theme config
+JOVIAL_SYMBOL=(
+    corner.top    '╭─'
+    corner.bottom '╰─── '
+    git.dirty ' ✘'
+    git.clean ' ✔'
+    arrow '🔥'
+    arrow.git-clean 🔥
+    arrow.git-dirty 🔥
+)
+JOVIAL_PROMPT_PRIORITY=(
+    path
+    git-info
+)
+JOVIAL_PALETTE=(
+    bracket '%F{15}'
+    path '%B%F{15}%}'
+    git '%F{28}'
+    success '%F{040}'
+    error '%F{203}'
+)
+JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[bracket]}('
+JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[bracket]})${JOVIAL_PALETTE[normal]}'
 
-# User configuration
 # Export
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
@@ -41,5 +64,5 @@ export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOBIN
 
-# Fig end block
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# Amazon Q block
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
