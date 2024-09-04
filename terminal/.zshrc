@@ -11,26 +11,31 @@ source $ZSH/oh-my-zsh.sh
 # Theme config
 JOVIAL_SYMBOL=(
     corner.top    '╭─'
-    corner.bottom '╰─── '
+    corner.bottom '╰──'
     git.dirty ' ✘'
     git.clean ' ✔'
-    arrow '🔥'
-    arrow.git-clean 🔥
-    arrow.git-dirty 🔥
+    arrow '─➤ 🔥'
+    arrow.git-clean '─➤ 🔥'
+    arrow.git-dirty '─➤ 🔥'
 )
 JOVIAL_PROMPT_PRIORITY=(
+    user
     path
     git-info
 )
 JOVIAL_PALETTE=(
-    bracket '%F{15}'
-    path '%B%F{15}%}'
-    git '%F{28}'
+    purple  '%F{105}'
+    white   '%F{15}'
+    path    '%B%F{15}%}'
+    git     '%F{28}'
     success '%F{040}'
-    error '%F{203}'
+    error   '%F{203}'
 )
-JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[bracket]}('
-JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[bracket]})${JOVIAL_PALETTE[normal]}'
+JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[white]}('
+JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[white]})${JOVIAL_PALETTE[normal]}'
+JOVIAL_AFFIXES[user.prefix]='${JOVIAL_PALETTE[white]}['
+JOVIAL_AFFIXES[username]='${JOVIAL_PALETTE[white]}${(%):-%n}'
+JOVIAL_AFFIXES[user.suffix]='${JOVIAL_PALETTE[white]}] '
 
 # Export
 export PATH=/opt/homebrew/bin:$PATH
