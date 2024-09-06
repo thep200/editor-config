@@ -14,10 +14,11 @@ JOVIAL_SYMBOL=(
     corner.bottom '╰──'
     git.dirty ' ✘'
     git.clean ' ✔'
-    arrow '─➤ 🔥'
-    arrow.git-clean '─➤ 🔥'
-    arrow.git-dirty '─➤ 🔥'
+    arrow '─➤ 🌵'
+    arrow.git-clean '─➤ 🌵'
+    arrow.git-dirty '─➤ 🌵'
 )
+# 🔥
 JOVIAL_PROMPT_PRIORITY=(
     user
     path
@@ -35,7 +36,7 @@ JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[white]}('
 JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[white]})${JOVIAL_PALETTE[normal]}'
 JOVIAL_AFFIXES[user.prefix]='${JOVIAL_PALETTE[white]}['
 JOVIAL_AFFIXES[username]='${JOVIAL_PALETTE[white]}${(%):-%n}'
-JOVIAL_AFFIXES[user.suffix]='${JOVIAL_PALETTE[white]}] '
+JOVIAL_AFFIXES[user.suffix]='${JOVIAL_PALETTE[white]}] │'
 
 # Export
 export PATH=/opt/homebrew/bin:$PATH
