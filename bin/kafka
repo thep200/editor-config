@@ -1,0 +1,45 @@
+# Change your container name
+container_id="kafka"
+
+# Parameters
+kafka_default_bootstrap_server="kafka:9092"
+kafka_topic="topic"
+kafka_producer="producer"
+kafka_consumer="consumer"
+kafka_console_consumer="console-consumer"
+kafka_bootstrap_server="--bootstrap-server"
+
+# Command
+command="kafka-topics.sh --version"
+
+case $1 in
+    "$kafka_topic")
+        command="kafka-topics.sh"
+        ;;
+    "$kafka_console_consumer")
+        command="kafka-console-consumer.sh"
+        ;;
+    "$kafka_consumer")
+        command="kafka-consumer-groups.sh"
+        ;;
+    "$kafka_producer")
+        command="kafka-console-producer.sh"
+        ;;
+esac
+
+# Build command
+if [ "$2" == "$kafka_bootstrap_server" ]; then
+    command="$command --bootstrap-server $3 ${@:4}"
+else
+    command="$command --bootstrap-server $kafka_default_bootstrap_server ${@:2}"
+fi
+
+# Execute
+execContainer() {
+    docker exec -it $container_id bash -c "$command"
+    exit
+}
+
+execContainer
+
+
