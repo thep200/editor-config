@@ -5,13 +5,13 @@ depth=2
 # Command
 command="php -v"
 # Container id
-php74Container="phpfpm74"
+phpContainer="phpfpm"
 # Parameter
 firstParam="run"
 
 # Function
 execContainer() {
-    docker exec -it $php74Container bash -c "$command" 2>/dev/null
+    docker exec -it $phpContainer bash -c "$command" 2>/dev/null
     exit
 }
 

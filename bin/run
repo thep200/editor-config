@@ -1,51 +1,51 @@
+# Deprecated ##############################################################
+
 # Current directory working in laradock
-root_code_dir="$HOME/Code"
+rootCodeDir="$HOME/Projects"
 # Depth retreive folder
 depth=2
 
 # Check root code directory is existed
-if [ ! -d "$root_code_dir" ]; then
-    echo "The directory $root_code_dir does not exist"
+if [ ! -d "$rootCodeDir" ]; then
+    printf "\e[31mERROR: the directory $rootCodeDir does not exist\e[0m\n"
     exit
 fi
 
 # Check current directory is in root code directory
-is_in_root_code_dir=false
-for child in $(find "$root_code_dir" -maxdepth $depth -type d); do
+isInRootCodeDir=false
+for child in $(find "$rootCodeDir" -maxdepth $depth -type d); do
     if [ "$PWD" == $child ]; then
-        is_in_root_code_dir=true
+        isInRootCodeDir=true
     fi
 done
-if [ "$is_in_root_code_dir" = false ]; then
-    echo "The current directory is not part of the docker working directory (depth=$depth)"
+if [ "$isInRootCodeDir" = false ]; then
+    printf "\e[31mERROR: the current directory is not part of the docker working directory (depth=$depth)\e[0m\n"
     exit
 fi
 
-tele_target=$(echo "$PWD" | sed "s|$root_code_dir/|""|")
-if [ "$tele_target" == "$PWD" ]; then
-    echo "You are in root directory"
+teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
+if [ "$teleTarget" == "$PWD" ]; then
+    printf "\e[31mERROR: you are in root directory\e[0m\n"
     exit
 fi
 
 if [ "$#" == 0 ]; then
-    echo "Specific container name is required (--php74 or phpfpm)"
+    printf "\e[31mERROR: specific container name is required (--php74 or phpfpm)\e[0m\n"
     exit
 fi
 
-fruit="apple"
-
 container=$(echo "${@: -1}")
-command="cd $tele_target && $(echo "$@" | sed "s| $container|""|")"
+command="cd $teleTarget && $(echo "$@" | sed "s| $container|""|")"
 case $container in
     "--php74")
-        container_id="laradock-php-fpm-7.4-1"
-        docker exec -it $container_id bash -c "$command"
+        containerId="phpfpm74"
+        docker exec -it $containerId bash -c "$command" 2>/dev/null
         ;;
     "--phpfpm")
-        container_id="laradock-php-fpm-1"
-        docker exec -it $container_id bash -c "$command"
+        containerId="phpfpm"
+        docker exec -it $containerId bash -c "$command" 2>/dev/null
         ;;
     *)
-        echo "Specific is invalid"
+        printf "\e[31mERROR: specific is invalid\e[0m\n"
         ;;
 esac

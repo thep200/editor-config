@@ -1,9 +1,15 @@
 # Replace with your container name and bootstrap server
-kafka_container="kafka00"
-kafka_bootstrap_server="kafka00:9092,kafka01:9092,kafka02:9092"
+kafkaContainer="kafka00"
+kafkaBootstrapServer="kafka00:9092,kafka01:9092,kafka02:9092"
 
 # Command
 command="kafka-topics.sh --version"
+
+# Execute
+execContainer() {
+    docker exec -it $kafkaContainer bash -c "$command" 2>/dev/null
+    exit
+}
 
 case $1 in
     "kafka-topics.sh")
@@ -23,19 +29,20 @@ case $1 in
         shift 1
         ;;
     *)
-        printf "\e[31mFirst parameter must be one of the following: kafka-topics.sh, kafka-console-consumer.sh, kafka-consumer-groups.sh, kafka-console-producer.sh\e[0m\n"
+        printf "\e[31mERROR: first parameter must be one of the following: kafka-topics.sh, kafka-console-consumer.sh, kafka-consumer-groups.sh, kafka-console-producer.sh\e[0m\n"
         exit
         ;;
 esac
 
+# Specific container and bootstrap servers
 while [[ "$#" -gt 0 ]]; do
     case $1 in
         --container)
-            kafka_container="$2"
+            kafkaContainer="$2"
             shift 2
             ;;
         --bootstrap-server)
-            kafka_bootstrap_server="$2"
+            kafkaBootstrapServer="$2"
             shift 2
             ;;
         *)
@@ -45,12 +52,9 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 # Build command
-command="$command --bootstrap-server $kafka_bootstrap_server $@"
+command="$command --bootstrap-server $kafkaBootstrapServer $@"
 
 # Execute
-execContainer() {
-    docker exec -it $kafka_container bash -c "$command"
-    exit
-}
-
 execContainer
+
+
