@@ -19,10 +19,11 @@ execContainer() {
 checkCurrentFolderIsInRoot() {
     for child in $(find "$rootCodeDir" -maxdepth $depth -type d); do
         if [ "$PWD" == $child ]; then
-            return 0
+            echo true
+            exit
         fi
     done
-    return 1
+    echo false
 }
 
 # Check root code directory is existed
@@ -33,19 +34,17 @@ fi
 
 # Get cd target
 teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
-
 # Check current folder is in root code directory
 currentFolderIsInRoot=$(checkCurrentFolderIsInRoot)
-
 # Build command
 if [ "$1" == "$firstParam" ] && [ "$#" -gt 1 ]; then
-    if [ "$isInRootCodeDir" = false ] || [ "$teleTarget" == "$PWD" ]; then
+    if [ "$currentFolderIsInRoot" == false ] || [ "$teleTarget" == "$PWD" ]; then
         printf "\e[31mERROR: current folder is not a child of the docker working folder (depth=$depth)\e[0m\n"
         exit
     fi
     command="cd $teleTarget && $(echo "$@" | sed "s|$firstParam |""|")"
 else
-    if [ "$isInRootCodeDir" = true ]; then
+    if [ "$currentFolderIsInRoot" == true ]; then
         command="cd $teleTarget && php $@"
     else
         command="php $@"
