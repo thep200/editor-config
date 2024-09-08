@@ -5,37 +5,24 @@ depth=2
 # Command
 command="php -v"
 # Container id
-php74Container="phpfpm74"
+phpContainer="phpfpm74"
 # Parameter
 firstParam="run"
 
-# Function
+# Function exec container
 execContainer() {
-    docker exec -it $php74Container bash -c "$command" 2>/dev/null
+    docker exec -it $phpContainer bash -c "$command" 2>/dev/null
     exit
 }
 
-getTeleTarget() {
-    # Check current directory is in root code directory
-    isInRootCodeDir=false
+# Check current folder is in root code directory
+checkCurrentFolderIsInRoot() {
     for child in $(find "$rootCodeDir" -maxdepth $depth -type d); do
         if [ "$PWD" == $child ]; then
-            isInRootCodeDir=true
+            return 0
         fi
     done
-
-    if [ "$isInRootCodeDir" = false ]; then
-        printf "\e[31mERROR: the current directory is not part of the docker working directory (depth=$depth)\e[0m\n"
-        exit
-    fi
-
-    teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
-    if [ "$teleTarget" == "$PWD" ]; then
-        printf "\e[31mERROR: you are in root directory\e[0m\n"
-        exit
-    fi
-
-    echo $teleTarget
+    return 1
 }
 
 # Check root code directory is existed
@@ -44,12 +31,25 @@ if [ ! -d "$rootCodeDir" ]; then
     exit
 fi
 
+# Get cd target
+teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
+
+# Check current folder is in root code directory
+currentFolderIsInRoot=$(checkCurrentFolderIsInRoot)
+
 # Build command
 if [ "$1" == "$firstParam" ] && [ "$#" -gt 1 ]; then
-    teleTarget=$(getTeleTarget)
+    if [ "$isInRootCodeDir" = false ] || [ "$teleTarget" == "$PWD" ]; then
+        printf "\e[31mERROR: current folder is not a child of the docker working folder (depth=$depth)\e[0m\n"
+        exit
+    fi
     command="cd $teleTarget && $(echo "$@" | sed "s|$firstParam |""|")"
 else
-    command="php $@"
+    if [ "$isInRootCodeDir" = true ]; then
+        command="cd $teleTarget && php $@"
+    else
+        command="php $@"
+    fi
 fi
 
 # Execute
