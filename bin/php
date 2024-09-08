@@ -15,36 +15,41 @@ execContainer() {
     exit
 }
 
+getTeleTarget() {
+    # Check current directory is in root code directory
+    isInRootCodeDir=false
+    for child in $(find "$rootCodeDir" -maxdepth $depth -type d); do
+        if [ "$PWD" == $child ]; then
+            isInRootCodeDir=true
+        fi
+    done
+
+    if [ "$isInRootCodeDir" = false ]; then
+        printf "\e[31mERROR: the current directory is not part of the docker working directory (depth=$depth)\e[0m\n"
+        exit
+    fi
+
+    teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
+    if [ "$teleTarget" == "$PWD" ]; then
+        printf "\e[31mERROR: you are in root directory\e[0m\n"
+        exit
+    fi
+
+    echo $teleTarget
+}
+
 # Check root code directory is existed
 if [ ! -d "$rootCodeDir" ]; then
     printf "\e[31mERROR: the directory $rootCodeDir does not exist\e[0m\n"
     exit
 fi
 
-# Check current directory is in root code directory
-isInRootCodeDir=false
-for child in $(find "$rootCodeDir" -maxdepth $depth -type d); do
-    if [ "$PWD" == $child ]; then
-        isInRootCodeDir=true
-    fi
-done
-
-if [ "$isInRootCodeDir" = false ]; then
-    printf "\e[31mERROR: the current directory is not part of the docker working directory (depth=$depth)\e[0m\n"
-    exit
-fi
-
-teleTarget=$(echo "$PWD" | sed "s|$rootCodeDir/|""|")
-if [ "$teleTarget" == "$PWD" ]; then
-    printf "\e[31mERROR: you are in root directory\e[0m\n"
-    exit
-fi
-
 # Build command
 if [ "$1" == "$firstParam" ] && [ "$#" -gt 1 ]; then
+    teleTarget=$(getTeleTarget)
     command="cd $teleTarget && $(echo "$@" | sed "s|$firstParam |""|")"
 else
-    command="cd $teleTarget && php $@"
+    command="php $@"
 fi
 
 # Execute
