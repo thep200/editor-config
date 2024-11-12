@@ -8,6 +8,7 @@ plugins=(
     git
 )
 source $ZSH/oh-my-zsh.sh
+
 # Theme config
 JOVIAL_SYMBOL=(
     corner.top    '╭─'
@@ -71,6 +72,11 @@ eval "$(pyenv virtualenv-init -)"
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOBIN
+
+# Function
+function gittag() {
+  git tag --sort=-creatordate | grep "$1" | head -n 5
+}
 
 # Amazon Q block
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
