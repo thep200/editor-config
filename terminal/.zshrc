@@ -5,33 +5,33 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="jovial"
 plugins=(
-    git
+  git
 )
 source $ZSH/oh-my-zsh.sh
 
 # Theme config
 JOVIAL_SYMBOL=(
-    corner.top    '╭─'
-    corner.bottom '╰──'
-    git.dirty ' ✘'
-    git.clean ' ✔'
-    arrow '─➤ 🌵'
-    arrow.git-clean '─➤ 🌵'
-    arrow.git-dirty '─➤ 🌵'
+  corner.top    '╭─'
+  corner.bottom '╰──'
+  git.dirty ' ✘'
+  git.clean ' ✔'
+  arrow '─➤ 🌵'
+  arrow.git-clean '─➤ 🌵'
+  arrow.git-dirty '─➤ 🌵'
 )
 
 JOVIAL_PROMPT_PRIORITY=(
-    user
-    path
-    git-info
+  user
+  path
+  git-info
 )
 JOVIAL_PALETTE=(
-    white   '%F{15}'
-    purple  '%F{147}'
-    path    '%B%F{15}%}'
-    git     '%F{28}'
-    success '%F{040}'
-    error   '%F{203}'
+  white   '%F{15}'
+  purple  '%F{147}'
+  path    '%B%F{15}%}'
+  git     '%F{28}'
+  success '%F{040}'
+  error   '%F{203}'
 )
 
 # Promt
@@ -75,6 +75,7 @@ export PATH=$PATH:$GOBIN
 
 # Function
 function gittag() {
+  git fetch --tags
   git tag --sort=-creatordate | grep "$1" | head -n 5
 }
 
