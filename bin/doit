@@ -54,7 +54,6 @@ fi
 iteration=0
 while [[ $max_iterations -eq 0 ]] || [[ $iteration -lt $max_iterations ]]; do
     # Execute
-    echo -e "${GREEN}[INFO][COUNT  ${PURPLE}$(($iteration + 1))${GREEN}] Running command $@${RESET}"
     "$@"
     exit_status=$?
     ((iteration++))
@@ -62,9 +61,10 @@ while [[ $max_iterations -eq 0 ]] || [[ $iteration -lt $max_iterations ]]; do
     # Wait
     if [[ $max_iterations -eq 0 ]] || [[ $iteration -lt $max_iterations ]]; then
         if [[ $exit_status -eq 0 ]]; then
+            echo -e "${GREEN}[INFO][COUNT  ${PURPLE}$(($iteration + 1))${GREEN}] Running command $@${RESET}"
             echo -e "${GREEN}[INFO][STATUS ${YELLOW}$exit_status${GREEN}] Wait $sleep_time s before next execute${RESET}"
         else
-            echo -e "${RED}[ERROR][STATUS ${RED}$exit_status${GREEN}]"
+            echo -e "${RED}[ERROR][STATUS ${RED}$exit_status]"
             exit $exit_status
         fi
         sleep $sleep_time
