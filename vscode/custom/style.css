@@ -6,7 +6,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 /* Function */
 .mtk15 {
     color: #FFF;
@@ -21,6 +20,11 @@
         0 0 5px #483D8B,
         0 0 11px #483D8B,
         0 0 11px #483D8B;
+}
+
+/* Hidden scroll bar border in terminal */
+.xterm-decoration-overview-ruler {
+    display: none;
 }
 
 /* Top bar of primary side bar */

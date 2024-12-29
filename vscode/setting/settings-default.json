@@ -1,5 +1,5 @@
 {
-    // Editor
+    // --- Editor General Settings ---
     "editor.autoClosingBrackets": "always",
     "editor.bracketPairColorization.enabled": false,
     "editor.fastScrollSensitivity": 15,
@@ -10,13 +10,15 @@
     "editor.cursorBlinking": "expand",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.stickyScroll.enabled": true,
     "editor.cursorStyle": "line-thin",
     "editor.accessibilitySupport": "off",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
-    // Suggestions
+    "editor.stickyScroll.maxLineCount": 3,
+    "editor.minimap.renderCharacters": false,
+    // --- Editor Suggestions and Completion ---
     "editor.tabCompletion": "on",
     "editor.suggest.preview": true,
     "editor.guides.indentation": true,
@@ -37,48 +39,53 @@
     "editor.wordBasedSuggestions": "allDocuments",
     "editor.parameterHints.enabled": true,
     "editor.quickSuggestionsDelay": 5,
-    "editor.stickyScroll.maxLineCount": 3,
-    "editor.minimap.renderCharacters": false,
     "editor.quickSuggestions": {
         "other": "on",
         "comments": "on",
         "strings": "on"
     },
-    // Files
+    // --- Files ---
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    // Search
+    // --- Search ---
     "search.useIgnoreFiles": false,
     "search.useParentIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
     "search.exclude": {
         "**/vendor": true
     },
-    // zenMode
+    // --- Zen Mode ---
     "zenMode.restore": true,
     "zenMode.showTabs": "none",
-    // Tab & breadcrumbs
+    // --- Tabs and Breadcrumbs ---
     "breadcrumbs.enabled": false,
-    "workbench.editor.showTabs": "none",
-    // Others
+    // --- Window and Title Settings ---
     "window.commandCenter": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "window.titleSeparator": " 🥔 ",
+    "window.openFilesInNewWindow": "off",
+    "window.titleSeparator": " 🌵 ",
     "window.title": " ${separator}${activeEditorShort}",
-    // Explorer
+    // --- Explorer ---
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    // Terminal
+    // --- Terminal ---
     "terminal.integrated.cursorStyle": "line",
-    // Git
+    "terminal.integrated.fontFamily": "Victor Mono",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.letterSpacing": 1.5,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.env.osx": {
+        "Q_NEW_SESSION": "1"
+    },
+    // --- Git and GitLens ---
+    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.codeLens": true,
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.currentLine.pullRequests.enabled": false,
     "gitlens.currentLine.scrollable": false,
-    "gitlens.showWelcomeOnInstall": false,
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 1,
@@ -88,15 +95,14 @@
     "gitlens.currentLine.fontStyle": "italic",
     "git.openRepositoryInParentFolders": "never",
     "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
-    // Themes
-    // Workbench
+    // --- Workbench ---
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
+    // --- Themes ---
     "workbench.colorCustomizations": {
-        // Themes color
         "panel.border": "#1e1e1e",
         "sideBar.border": "#1e1e1e",
         "terminal.border": "#1e1e1e",
@@ -105,32 +111,26 @@
         "scrollbar.shadow": "#1e1e1e",
         "editor.background": "#1e1e1e",
         "sideBar.background": "#1e1e1e",
-        "terminal.background": "#1e1e1e",
+        "terminal.background": "#00000000",
         "menu.selectionBorder": "#1e1e1e",
         "activityBar.background": "#1e1e1e",
         "notifications.background": "#1e1e1e",
         "titleBar.activeBackground": "#1e1e1e",
         "titleBar.inactiveBackground": "#1e1e1e",
         "sideBarSectionHeader.background": "#1e1e1e",
-        // Peek
         "peekViewTitle.background": "#1e1e1e",
         "peekViewResult.background": "#1e1e1e",
         "peekViewEditor.background": "#1e1e1e",
         "peekViewEditorGutter.background": "#1e1e1e",
-        // Current line
         "editor.lineHighlightBackground": "#64748b10",
         "editor.hoverHighlightBackground": "#64748b10",
-        // Select word
         "editor.selectionBackground": "#64748b50",
         "editor.wordHighlightBackground": "#64748b30",
         "editor.selectionHighlightBackground": "#64748b10",
-        // Find word
         "editor.findMatchBackground": "#64748b60",
         "editor.findMatchHighlightBackground": "#64748b20",
-        // Bracket
         "editorBracketMatch.border": "#64748b",
         "editorBracketMatch.background": "#64748b50",
-        // Files selection
         "list.hoverForeground": "#FFF",
         "list.hoverBackground": "#64748b30",
         "list.inactiveFocusOutline": "#64748b",
@@ -139,32 +139,26 @@
         "list.activeSelectionBackground": "#64748b50",
         "list.inactiveSelectionForeground": "#FFF",
         "list.inactiveSelectionBackground": "#64748b50",
-        // Sticky
         "editorStickyScroll.shadow": "#1e1e1e",
         "editorStickyScrollHover.background": "#64748b20",
-        // Widget
         "editorWidget.border": "#64748b",
         "editorWidget.background": "#1e1e1e",
         "editorSuggestWidget.border": "#64748b",
         "editorSuggestWidget.background": "#1e1e1e",
-        // Input
         "input.border": "#64748b",
-        // Notification
         "notificationToast.border": "#64748b",
-        // Profile
         "profileBadge.foreground": "#FFF",
         "profileBadge.background": "#187a46",
-        // Editor
         "editorGutter.addedBackground": "#16a34a",
         "editorGutter.modifiedBackground": "#ffd700",
         "editorGutter.deletedBackground": "#ff0000",
+        "editor.stackFrameHighlightBackground": "#64748b30"
     },
-    // Editor
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": [
-                    "string",
+                    "string"
                 ],
                 "settings": {
                     "foreground": "#7EE787",
@@ -173,15 +167,15 @@
             },
             {
                 "scope": [
-                    "constant.numeric",
+                    "constant.numeric"
                 ],
                 "settings": {
-                    "foreground": "#FF7B72",
+                    "foreground": "#FF7B72"
                 }
             },
             {
                 "scope": [
-                    "comment",
+                    "comment"
                 ],
                 "settings": {
                     "foreground": "#8B949E",
@@ -221,15 +215,26 @@
                     "support.constant.property-value.css",
                     "constant.other.color.rgb-value.hex.css",
                     "punctuation.definition.template-expression.end",
-                    "punctuation.definition.template-expression.begin",
+                    "punctuation.definition.template-expression.begin"
                 ],
                 "settings": {
                     "foreground": "#FF9F50"
                 }
-            },
+            }
         ]
     },
-    // Not sync settings
+    "vscode_custom_css.imports": [
+        "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/style.css",
+        "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
+    ],
+    // --- Font and Appearance ---
+    "editor.fontSize": 14,
+    "editor.lineHeight": 3.25,
+    "editor.letterSpacing": 1.5,
+    "editor.fontWeight": "500",
+    "editor.fontFamily": "Victor Mono",
+    "editor.codeLensFontFamily": "Victor Mono",
+    // --- Settings Sync ---
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
         "editor.fontFamily",
@@ -241,33 +246,129 @@
         "terminal.integrated.fontSize",
         "terminal.integrated.letterSpacing",
         "terminal.integrated.fontWeight",
-        "apc.imports"
+        "vscode_custom_css.imports"
     ],
-    // Not Synced settings
-    "editor.fontSize": 14,
-    "editor.lineHeight": 3.25,
-    "editor.letterSpacing": 1.5,
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 2,
-    "editor.fontWeight": "500",
-    "terminal.integrated.fontWeight": "500",
-    "editor.fontFamily": "Victor Mono",
-    "editor.codeLensFontFamily": "Victor Mono",
-    "terminal.integrated.fontFamily": "Victor Mono",
-    "apc.imports": [
-        "file:///Users/thep200/Projects/Study/editor-config/themes/style.css",
-        "file:///Users/thep200/Projects/Study/editor-config/themes/script.js",
+    "workbench.settings.applyToAllProfiles": [
+        // --- Editor General Settings ---
+        "editor.autoClosingBrackets",
+        "editor.bracketPairColorization.enabled",
+        "editor.fastScrollSensitivity",
+        "editor.definitionLinkOpensInPeek",
+        "editor.autoClosingQuotes",
+        "editor.lineNumbers",
+        "editor.smoothScrolling",
+        "editor.cursorBlinking",
+        "editor.scrollbar.horizontal",
+        "editor.scrollbar.vertical",
+        "editor.scrollbar.verticalScrollbarSize",
+        "editor.stickyScroll.enabled",
+        "editor.cursorStyle",
+        "editor.accessibilitySupport",
+        "editor.cursorSmoothCaretAnimation",
+        "editor.codeActionWidget.includeNearbyQuickFixes",
+        "editor.stickyScroll.maxLineCount",
+        "editor.minimap.renderCharacters",
+        // --- Editor Suggestions and Completion ---
+        "editor.tabCompletion",
+        "editor.suggest.preview",
+        "editor.guides.indentation",
+        "editor.detectIndentation",
+        "editor.insertSpaces",
+        "editor.suggest.filterGraceful",
+        "editor.suggest.snippetsPreventQuickSuggestions",
+        "editor.suggest.showKeywords",
+        "editor.suggest.showSnippets",
+        "editor.suggest.showClasses",
+        "editor.suggest.showColors",
+        "editor.suggest.showConstants",
+        "editor.suggest.localityBonus",
+        "editor.suggest.shareSuggestSelections",
+        "editor.suggest.showIcons",
+        "editor.inlineSuggest.enabled",
+        "editor.acceptSuggestionOnEnter",
+        "editor.wordBasedSuggestions",
+        "editor.parameterHints.enabled",
+        "editor.quickSuggestionsDelay",
+        "editor.quickSuggestions",
+        // --- Files ---
+        "files.autoSave",
+        "files.autoSaveDelay",
+        "files.insertFinalNewline",
+        "files.trimTrailingWhitespace",
+        // --- Search ---
+        "search.useIgnoreFiles",
+        "search.useParentIgnoreFiles",
+        "search.useGlobalIgnoreFiles",
+        "search.exclude",
+        // --- Zen Mode ---
+        "zenMode.restore",
+        "zenMode.showTabs",
+        // --- Tabs and Breadcrumbs ---
+        "breadcrumbs.enabled",
+        "workbench.editor.showTabs",
+        // --- Window and Title Settings ---
+        "window.commandCenter",
+        "window.openFilesInNewWindow",
+        "window.titleSeparator",
+        "window.title",
+        // --- Explorer ---
+        "explorer.confirmDelete",
+        "explorer.confirmDragAndDrop",
+        // --- Terminal ---
+        "terminal.integrated.cursorStyle",
+        "terminal.integrated.fontFamily",
+        "terminal.integrated.fontSize",
+        "terminal.integrated.letterSpacing",
+        "terminal.integrated.fontWeight",
+        "terminal.integrated.env.osx",
+        "terminal.integrated.defaultProfile.osx",
+        // --- Git and GitLens ---
+        "diffEditor.ignoreTrimWhitespace",
+        "diffEditor.codeLens",
+        "gitlens.codeLens.enabled",
+        "gitlens.hovers.currentLine.over",
+        "gitlens.currentLine.pullRequests.enabled",
+        "gitlens.currentLine.scrollable",
+        "gitlens.showWhatsNewAfterUpgrades",
+        "gitlens.virtualRepositories.enabled",
+        "gitlens.advanced.repositorySearchDepth",
+        "gitlens.blame.fontFamily",
+        "gitlens.currentLine.fontFamily",
+        "gitlens.blame.fontStyle",
+        "gitlens.currentLine.fontStyle",
+        "git.openRepositoryInParentFolders",
+        "gitlens.currentLine.format",
+        // --- Workbench ---
+        "workbench.commandPalette.preserveInput",
+        "workbench.list.smoothScrolling",
+        "workbench.sideBar.location",
+        "workbench.colorTheme",
+        "workbench.startupEditor",
+        // --- Themes ---
+        "workbench.colorCustomizations",
+        "editor.tokenColorCustomizations",
+        "vscode_custom_css.imports",
+        // --- Font and Appearance ---
+        "editor.fontSize",
+        "editor.lineHeight",
+        "editor.letterSpacing",
+        "editor.fontWeight",
+        "editor.fontFamily",
+        "editor.codeLensFontFamily",
+        // --- Daily change ---
+        "workbench.statusBar.visible",
+        "editor.minimap.enabled",
+        "workbench.activityBar.location",
+        "workbench.layoutControl.enabled",
+        "workbench.editor.editorActionsLocation",
+        "workbench.iconTheme",
     ],
-    // Daily settings
-    "symbols.folders.associations": {
-        "secret": "folder-auth"
-    },
-    "github.copilot.chat.welcomeMessage": "never",
+    // --- Daily change ---
+    "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.statusBar.visible": false,
-    "symbols.hidesExplorerArrows": false,
-    "workbench.iconTheme": "symbols",
+    "workbench.iconTheme": "catppuccin-latte",
+    "workbench.editor.showTabs": "none",
     "workbench.activityBar.location": "hidden",
 }
