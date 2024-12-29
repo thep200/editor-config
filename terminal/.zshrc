@@ -8,7 +8,6 @@ plugins=(
   git
 )
 source $ZSH/oh-my-zsh.sh
-
 # Theme config
 JOVIAL_SYMBOL=(
   corner.top    '╭─'
@@ -51,6 +50,8 @@ export PATH=/usr/local/bin:/usr/bin:$PATH
 alias ethis="vi ~/.zshrc"
 alias athis="source ~/.zshrc"
 alias tossh="cd ~/.ssh"
+alias crack="xattr -cr"
+alias vdocker="lazydocker"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -92,6 +93,38 @@ function gitbranch() {
     printf "%-${max_length}s | %s\n" "$branch_name" "$commit_date"
   done
   printf "%-${max_length}s-+-%s\n" "$(printf '%*s' $max_length | tr ' ' '-')" "-------------------"
+}
+
+# File
+function showfile() {
+  local ext=$1
+  local directory=${2:-.}
+
+  if [[ -z "$ext" ]]; then
+    echo "Usage: calculate_size extension [path]"
+    echo "Example: calculate_size php       # current directory"
+    echo "         calculate_size js /path  # specific path"
+    return 1
+  fi
+
+  if [[ ! -d "$directory" ]]; then
+    echo "Error: Directory '$directory' does not exist"
+    return 1
+  fi
+
+  local count=$(find "$directory" -name "*.$ext" -type f | wc -l | tr -d ' ')
+  if [[ $count -eq 0 ]]; then
+    echo "No *.$ext files found in $directory"
+    return 0
+  fi
+
+  find "$directory" -name "*.$ext" -type f -exec du -k {} + | \
+  awk '{total+=$1} END{
+    printf "Directory: '"$directory"'\n"
+    printf "Extension: .*'"$ext"'\n"
+    printf "Total files: '"$count"'\n"
+    printf "Total size: %.2f GB\n", total/1024/1024
+  }'
 }
 
 # Amazon Q block
