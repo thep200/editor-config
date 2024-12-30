@@ -24,7 +24,7 @@
 
 /* Hidden scroll bar border in terminal */
 .xterm-decoration-overview-ruler {
-    display: none;
+    display: none !important;
 }
 
 /* Top bar of primary side bar */
