@@ -168,14 +168,6 @@
             },
             {
                 "scope": [
-                    "constant.numeric"
-                ],
-                "settings": {
-                    "foreground": "#FF7B72"
-                }
-            },
-            {
-                "scope": [
                     "comment"
                 ],
                 "settings": {
@@ -203,6 +195,7 @@
                     "keyword.control.loop.vue",
                     "entity.other.attribute-name",
                     "keyword.control.conditional.vue",
+                    "entity.name.tag.css",
                     "entity.other.attribute-name.id.css",
                     "entity.other.attribute-name.class.css"
                 ],
@@ -212,6 +205,7 @@
             },
             {
                 "scope": [
+                    "constant.numeric",
                     "keyword.other.unit",
                     "support.constant.property-value.css",
                     "constant.other.color.rgb-value.hex.css",
@@ -219,7 +213,7 @@
                     "punctuation.definition.template-expression.begin"
                 ],
                 "settings": {
-                    "foreground": "#FF9F50"
+                    "foreground": "#ffa657"
                 }
             }
         ]

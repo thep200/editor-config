@@ -8,18 +8,16 @@
 
 /* Function */
 .mtk15 {
-    color: #FFF;
+    color: #F0F0F0;
     text-shadow: 0 0 1px #6A5ACD,
+        0 0 2px #3f3584,
         0 0 2px #483D8B,
-        0 0 2px #483D8B,
-        0 0 3px #483D8B,
+        0 0 3px #3f3584,
         0 0 3px #483D8B,
         0 0 3px #483D8B,
         0 0 5px #483D8B,
         0 0 5px #483D8B,
-        0 0 5px #483D8B,
-        0 0 11px #483D8B,
-        0 0 11px #483D8B;
+        0 0 5px #483D8B;
 }
 
 /* Hidden scroll bar border in terminal */
