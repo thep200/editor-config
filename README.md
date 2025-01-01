@@ -84,3 +84,6 @@ APP_CODE_PATH_CONTAINER=/var/www
 ```sh
 echo -E "$(curl -fsSL https://raw.githubusercontent.com/zthxxx/jovial/master/jovial.zsh-theme)" > ~/.oh-my-zsh/themes/jovial.zsh-theme
 ```
+
+# Font
+- [Monaspace](https://monaspace.githubnext.com/)

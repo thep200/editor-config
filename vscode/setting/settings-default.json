@@ -71,10 +71,11 @@
     "explorer.confirmDragAndDrop": false,
     // --- Terminal ---
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "Victor Mono",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.letterSpacing": 1.5,
-    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontFamily": "Monaspace argon",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.letterSpacing": 1,
+    "terminal.integrated.lineHeight": 1.5,
+    "terminal.integrated.fontWeight": "150",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.env.osx": {
         "Q_NEW_SESSION": "1"
@@ -89,12 +90,12 @@
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.virtualRepositories.enabled": false,
     "gitlens.advanced.repositorySearchDepth": 1,
-    "gitlens.blame.fontFamily": "Victor Mono",
-    "gitlens.currentLine.fontFamily": "Victor Mono",
+    "gitlens.blame.fontFamily": "Monaspace argon",
+    "gitlens.currentLine.fontFamily": "Monaspace argon",
     "gitlens.blame.fontStyle": "italic",
     "gitlens.currentLine.fontStyle": "italic",
     "git.openRepositoryInParentFolders": "never",
-    "gitlens.currentLine.format": "🐾 ${author}, ${agoOrDate}",
+    "gitlens.currentLine.format": "🐾 #${id} by ${author}, ${agoOrDate}",
     // --- Workbench ---
     "workbench.commandPalette.preserveInput": true,
     "workbench.list.smoothScrolling": true,
@@ -111,7 +112,7 @@
         "scrollbar.shadow": "#1e1e1e",
         "editor.background": "#1e1e1e",
         "sideBar.background": "#1e1e1e",
-        "terminal.background": "#00000000",
+        "terminal.background": "#1e1e1e",
         "menu.selectionBorder": "#1e1e1e",
         "activityBar.background": "#1e1e1e",
         "notifications.background": "#1e1e1e",
@@ -193,7 +194,7 @@
                     "constant.character.escape"
                 ],
                 "settings": {
-                    "fontStyle": "italic bold"
+                    "fontStyle": "italic"
                 }
             },
             {
@@ -228,12 +229,12 @@
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
     ],
     // --- Font and Appearance ---
-    "editor.fontSize": 14,
-    "editor.lineHeight": 3.25,
-    "editor.letterSpacing": 1.5,
-    "editor.fontWeight": "500",
-    "editor.fontFamily": "Victor Mono",
-    "editor.codeLensFontFamily": "Victor Mono",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 2.5,
+    "editor.letterSpacing": 1,
+    "editor.fontWeight": "150",
+    "editor.fontFamily": "Monaspace argon",
+    "editor.codeLensFontFamily": "Monaspace argon",
     // --- Settings Sync ---
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
@@ -245,6 +246,7 @@
         "terminal.integrated.fontFamily",
         "terminal.integrated.fontSize",
         "terminal.integrated.letterSpacing",
+        "terminal.integrated.lineHeight",
         "terminal.integrated.fontWeight",
         "vscode_custom_css.imports"
     ],
@@ -319,6 +321,7 @@
         "terminal.integrated.fontFamily",
         "terminal.integrated.fontSize",
         "terminal.integrated.letterSpacing",
+        "terminal.integrated.lineHeight",
         "terminal.integrated.fontWeight",
         "terminal.integrated.env.osx",
         "terminal.integrated.defaultProfile.osx",
