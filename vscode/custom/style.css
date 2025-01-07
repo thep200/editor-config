@@ -25,6 +25,16 @@
     display: none !important;
 }
 
+/* Hide top border line in debug console */
+.repl-input-wrapper {
+    border: none !important;
+}
+
+/* Hide icon debug in console */
+.codicon-debug-console-evaluation-prompt {
+    display: none !important;
+}
+
 /* Top bar of primary side bar */
 /* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
     display: none;

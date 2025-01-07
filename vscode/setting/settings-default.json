@@ -153,7 +153,8 @@
         "editorGutter.addedBackground": "#16a34a",
         "editorGutter.modifiedBackground": "#ffd700",
         "editorGutter.deletedBackground": "#ff0000",
-        "editor.stackFrameHighlightBackground": "#64748b30"
+        "editor.stackFrameHighlightBackground": "#64748b30",
+        "sideBarSectionHeader.border": "#1e1e1e",
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -215,6 +216,15 @@
                 "settings": {
                     "foreground": "#ffa657"
                 }
+            },
+            {
+                "scope": [
+                    "constant.character.escape",
+                    "keyword.operator.regexp"
+                ],
+                "settings": {
+                    "foreground": "#D16969"
+                }
             }
         ]
     },
@@ -222,14 +232,13 @@
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/style.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
     ],
-    // --- Font and Appearance ---
+    // --- Settings Sync ---
     "editor.fontSize": 15,
     "editor.lineHeight": 2.5,
     "editor.letterSpacing": 1,
     "editor.fontWeight": "150",
     "editor.fontFamily": "Monaspace argon",
     "editor.codeLensFontFamily": "Monaspace argon",
-    // --- Settings Sync ---
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
         "editor.fontFamily",
@@ -242,7 +251,7 @@
         "terminal.integrated.letterSpacing",
         "terminal.integrated.lineHeight",
         "terminal.integrated.fontWeight",
-        "vscode_custom_css.imports"
+        "vscode_custom_css.imports",
     ],
     "workbench.settings.applyToAllProfiles": [
         // --- Editor General Settings ---
@@ -359,6 +368,7 @@
         "workbench.layoutControl.enabled",
         "workbench.editor.editorActionsLocation",
         "workbench.iconTheme",
+        "window.zoomLevel",
     ],
     // --- Daily change ---
     "workbench.statusBar.visible": false,
