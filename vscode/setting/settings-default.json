@@ -22,7 +22,6 @@
     "editor.tabCompletion": "on",
     "editor.suggest.preview": true,
     "editor.guides.indentation": true,
-    "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.suggest.filterGraceful": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -155,6 +154,10 @@
         "editorGutter.deletedBackground": "#ff0000",
         "editor.stackFrameHighlightBackground": "#64748b30",
         "sideBarSectionHeader.border": "#1e1e1e",
+        "debugConsole.infoForeground": "#16a34a",
+        "debugConsole.warningForeground": "#fde047",
+        "debugConsole.errorForeground": "#dc2626",
+        "debugConsole.sourceForeground": "#fef08a",
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -163,7 +166,7 @@
                     "string"
                 ],
                 "settings": {
-                    "foreground": "#7EE787",
+                    "foreground": "#7ee787",
                     "fontStyle": "italic"
                 }
             },
