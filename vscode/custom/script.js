@@ -11,10 +11,11 @@ const padding = 10; // up + bottom
 var styleElement = document.createElement("style");
 var styles = `
   .quick-input-widget {
-    // transform: translateY(-50%) !important;
     top: 20% !important;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2) !important;
     width: 700px !important;
+    // transform: translateY(-50%) !important;
+    transform: translateX(-40%) !important;
     left: calc(50% - 50px) !important;
   }
   .quick-input-widget .monaco-inputbox {
