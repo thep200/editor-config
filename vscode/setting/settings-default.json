@@ -103,25 +103,20 @@
     "workbench.startupEditor": "none",
     // --- Themes ---
     "workbench.colorCustomizations": {
-        "panel.border": "#1e1e1e",
-        "sideBar.border": "#1e1e1e",
-        "terminal.border": "#1e1e1e",
-        "menu.background": "#1e1e1e",
-        "titleBar.border": "#1e1e1e",
-        "scrollbar.shadow": "#1e1e1e",
+        "panel.border": "#0000",
+        "sideBar.border": "#0000",
+        "terminal.border": "#0000",
+        "menu.background": "#0000",
+        "titleBar.border": "#0000",
+        "scrollbar.shadow": "#0000",
         "editor.background": "#1e1e1e",
         "sideBar.background": "#1e1e1e",
         "terminal.background": "#1e1e1e",
         "menu.selectionBorder": "#1e1e1e",
         "activityBar.background": "#1e1e1e",
-        "notifications.background": "#1e1e1e",
         "titleBar.activeBackground": "#1e1e1e",
         "titleBar.inactiveBackground": "#1e1e1e",
         "sideBarSectionHeader.background": "#1e1e1e",
-        "peekViewTitle.background": "#1e1e1e",
-        "peekViewResult.background": "#1e1e1e",
-        "peekViewEditor.background": "#1e1e1e",
-        "peekViewEditorGutter.background": "#1e1e1e",
         "editor.lineHighlightBackground": "#64748b10",
         "editor.hoverHighlightBackground": "#64748b10",
         "editor.selectionBackground": "#64748b50",
@@ -131,6 +126,23 @@
         "editor.findMatchHighlightBackground": "#64748b20",
         "editorBracketMatch.border": "#64748b",
         "editorBracketMatch.background": "#64748b50",
+        "editorStickyScroll.shadow": "#0000",
+        "editorStickyScrollHover.background": "#64748b20",
+        "editorSuggestWidget.border": "#64748b",
+        "editorSuggestWidget.background": "#1e1e1e",
+        "focusBorder": "#8e8e8e",
+        "editorWidget.background": "#1e1e1e",
+        "editorWidget.border": "#8e8e8e",
+        "sideBarSectionHeader.border": "#1e1e1e",
+        "editor.stackFrameHighlightBackground": "#64748b30",
+        // --- Text link ---
+        "textLink.activeForeground": "#fff",
+        "textLink.foreground": "#d3d3d3",
+        "textCodeBlock.background": "#64748b60",
+        "textBlockQuote.background": "#64748b60",
+        // --- Input ---
+        "input.border": "#7e7e7e",
+        // --- List ---
         "list.hoverForeground": "#FFF",
         "list.hoverBackground": "#64748b30",
         "list.inactiveFocusOutline": "#64748b",
@@ -139,25 +151,42 @@
         "list.activeSelectionBackground": "#64748b50",
         "list.inactiveSelectionForeground": "#FFF",
         "list.inactiveSelectionBackground": "#64748b50",
-        "editorStickyScroll.shadow": "#1e1e1e",
-        "editorStickyScrollHover.background": "#64748b20",
-        "editorWidget.border": "#64748b",
-        "editorWidget.background": "#1e1e1e",
-        "editorSuggestWidget.border": "#64748b",
-        "editorSuggestWidget.background": "#1e1e1e",
-        "input.border": "#64748b",
+        // --- Notification ---
+        "notifications.background": "#1e1e1e",
+        "notifications.border": "#5e5e5e",
         "notificationToast.border": "#64748b",
-        "profileBadge.foreground": "#FFF",
-        "profileBadge.background": "#187a46",
+        // --- Peek editor ---
+        "peekView.border": "#64748b45",
+        "peekViewTitle.background": "#1e1e1e",
+        "peekViewResult.background": "#1e1e1e",
+        "peekViewEditor.background": "#1e1e1e",
+        "peekViewEditorGutter.background": "#1e1e1e",
+        "peekViewEditor.matchHighlightBackground": "#64748b50",
+        "peekViewEditor.matchHighlightBorder": "#0000",
+        // --- Widget ---
+        "widget.shadow": "#0000",
+        "widget.border": "#0000",
+        "editorWidget.foreground": "#f0f0f0",
+        // --- GitLens ---
         "editorGutter.addedBackground": "#16a34a",
         "editorGutter.modifiedBackground": "#ffd700",
         "editorGutter.deletedBackground": "#ff0000",
-        "editor.stackFrameHighlightBackground": "#64748b30",
-        "sideBarSectionHeader.border": "#1e1e1e",
+        // --- Profile ---
+        "profileBadge.foreground": "#FFF",
+        "profileBadge.background": "#187a46",
+        // --- Debug Console ---
+        "debugConsole.infoBackground": "#0000",
+        "debugConsole.warningBackground": "#0000",
+        "debugConsole.errorBackground": "#0000",
+        "debugConsole.sourceBackground": "#0000",
         "debugConsole.infoForeground": "#16a34a",
         "debugConsole.warningForeground": "#fde047",
         "debugConsole.errorForeground": "#dc2626",
         "debugConsole.sourceForeground": "#fef08a",
+        // --- Scrollbar ---
+        "scrollbarSlider.background": "#0000",
+        "scrollbarSlider.hoverBackground": "#0000",
+        "scrollbarSlider.activeBackground": "#0000",
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -228,6 +257,15 @@
                 "settings": {
                     "foreground": "#D16969"
                 }
+            },
+            {
+                "scope": [
+                    "punctuation.definition.string.end",
+                    "punctuation.definition.string.begin"
+                ],
+                "settings": {
+                    "foreground": "#e394dc"
+                }
             }
         ]
     },
@@ -235,7 +273,6 @@
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/style.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
     ],
-    // --- Settings Sync ---
     "editor.fontSize": 15,
     "editor.lineHeight": 2.5,
     "editor.letterSpacing": 1,
@@ -374,6 +411,7 @@
         "window.zoomLevel",
     ],
     // --- Daily change ---
+    "github.copilot.nextEditSuggestions.enabled": true,
     "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "workbench.layoutControl.enabled": false,

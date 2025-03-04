@@ -17,6 +17,8 @@ var styles = `
     // transform: translateY(-50%) !important;
     transform: translateX(-40%) !important;
     left: calc(50% - 50px) !important;
+    border-radius: 10px !important;
+    border: 1.25px solid #4e4e4e !important;
   }
   .quick-input-widget .monaco-inputbox {
     padding: 10px 10px 10px 10px !important;

@@ -35,6 +35,10 @@
     display: none !important;
 }
 
+/* #workbench\.panel\.chatEditing > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.pane-body > div.interactive-session > div.chat-welcome-view-container {
+    display: none !important;
+} */
+
 /* Top bar of primary side bar */
 /* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
     display: none;
@@ -42,12 +46,10 @@
 
 /* Hover notification */
 /* div.notification-list-item.expanded:hover {
-    background-color: #191b23 !important;
 } */
 
 /* Hide top bar terminal */
 /* #workbench\.parts\.panel > div.composite.title.has-composite-bar {
-    display: none;
 } */
 
 /* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
@@ -90,3 +92,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
+
+/* Hide peek view right bar */
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
+    display: none !important;
+}
+
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2) > div > div > div {
+    display: none !important;
+}
+
+/* Hide border of input box */
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget.inline-chat-widget > div.zone-widget-container > div {
+    border: none !important;
+}
