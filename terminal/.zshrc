@@ -1,6 +1,9 @@
 # Amazon Q start
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
+# GVM
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 # Zsh config
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="jovial"
@@ -13,6 +16,7 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 export PATH=~/Projects/Env/bin:$PATH
 export PATH=/usr/local/bin:/usr/bin:$PATH
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Alias
 alias ethis="vi ~/.zshrc"

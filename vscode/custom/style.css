@@ -98,9 +98,9 @@
     display: none !important;
 }
 
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2) > div > div > div {
+/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2) > div > div > div {
     display: none !important;
-}
+} */
 
 /* Hide border of input box */
 #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget.inline-chat-widget > div.zone-widget-container > div {
