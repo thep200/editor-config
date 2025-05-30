@@ -14,7 +14,7 @@ plugins=(
 # Export
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
-export PATH=~/Projects/Env/bin:$PATH
+export PATH=~/Projects/Env/devdok/bin:$PATH
 export PATH=/usr/local/bin:/usr/bin:$PATH
 export PATH="$PATH:$(go env GOPATH)/bin"
 
@@ -23,7 +23,7 @@ alias ethis="vi ~/.zshrc"
 alias athis="source ~/.zshrc"
 alias tossh="cd ~/.ssh"
 alias crack="xattr -cr"
-alias vdocker="lazydocker"
+alias vdock="lazydocker"
 
 # Source
 source $ZSH/oh-my-zsh.sh
@@ -35,28 +35,33 @@ JOVIAL_SYMBOL=(
   corner.bottom '╰──'
   git.dirty ' ✘'
   git.clean ' ✔'
+  
   arrow '─➤ 🌵'
   arrow.git-clean '─➤ 🌵'
   arrow.git-dirty '─➤ 🌵'
 )
+
 JOVIAL_PROMPT_PRIORITY=(
   user
   path
   git-info
 )
+
 JOVIAL_PALETTE=(
   white   '%F{15}'
   purple  '%F{147}'
-  path    '%B%F{15}%}'
+  path    '%B%F{15}'
   git     '%F{28}'
   success '%F{040}'
   error   '%F{203}'
+  normal  '%f%b'
 )
+
 JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[white]}('
 JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[white]})${JOVIAL_PALETTE[normal]}'
 JOVIAL_AFFIXES[user.prefix]='${JOVIAL_PALETTE[white]}┤'
 JOVIAL_AFFIXES[username]='${JOVIAL_PALETTE[purple]}${(%):-%n}'
-JOVIAL_AFFIXES[user.suffix]='${JOVIAL_PALETTE[white]}│'
+JOVIAL_AFFIXES[user.suffix]='${JOVIAL_PALETTE[white]}│${JOVIAL_PALETTE[normal]}'
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
