@@ -8,38 +8,50 @@
 // from the command palette or from `Zed` application menu.
 {
   // UI & Themes
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    }
-  },
-  "theme": "Ayu Light",
+  "ssh_connections": [],
+  "theme": "Ayu Ctm Light",
   "icon_theme": "Catppuccin Latte",
   "cursor_blink": true,
   "cursor_shape": "bar",
   "line_indicator_format": "long",
+  "agent": {
+    "button": false,
+    "dock": "right",
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet-thought"
+    }
+  },
   "terminal": {
-    "button": false
+    "button": false,
+    "dock":"bottom"
   },
   "debugger": {
-    "button": false
+    "button": false,
+    "dock": "right"
   },
   "notification_panel": {
+    "button": false,
     "dock": "right"
   },
   "git_panel": {
+    "button": false,
     "dock": "right"
   },
   "outline_panel": {
+    "button": false,
     "dock": "right"
   },
   "collaboration_panel": {
     "button": false
   },
   "project_panel": {
-    "dock": "right",
-    "auto_fold_dirs": false
+    "button": false,
+    "dock": "right"
+  },
+  "chat_panel": {
+    "button": "never"
   },
   "search": {
     "button": false
@@ -86,28 +98,9 @@
     "show_menus": true
   },
   "extend_comment_on_newline": false,
-  "experimental.theme_overrides": {
-    "syntax": {
-      "comment": {
-        "font_style": "italic",
-        "color": "#8B949E"
-      },
-      "keyword": {
-        "font_style": "italic"
-      }
-    },
-
-    "border": "#FCFCFC",
-    // "pane.focused_border": "#FF0000",
-    // "panel.focused_border": "#FCFCFC",
-    "panel.background": "#FCFCFC",
-    "title_bar.background": "#FCFCFC",
-    "status_bar.background": "#FCFCFC",
-  },
 
   // Fonts
   "ui_font_size": 16,
-  // "buffer_font_family": null,
   "buffer_font_weight": 450,
   "buffer_font_size": 14.5,
   "buffer_line_height": {
@@ -131,21 +124,28 @@
   "format_on_save": "on",
   "ensure_final_newline_on_save": true,
   "multi_cursor_modifier": "alt",
-  "file_scan_exclusions": [],
+  "file_scan_exclusions": ["*__debug"],
 
   // Suggestions
-  "snippet_sort_order": "inline",
-  "show_edit_predictions": true,
-  "edit_predictions": {
-    "mode": "eager"
-  },
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  // "snippet_sort_order": "inline",
+  // "show_edit_predictions": true,
+  "edit_predictions": {
+    "mode": "eager"
   },
 
   // Languages
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
+    "show_type_hints": false,
+    "show_value_hints": false,
+    "show_other_hints": false,
+    "show_parameter_hints": true,
+    "toggle_on_modifiers_press": {
+      "function": true
+    }
   },
   "languages": {
     "PHP": {
@@ -163,13 +163,6 @@
       "enabled": true
     },
     "hunk_style": "staged_hollow"
-  },
-
-  // Extensions
-  "auto_install_extensions": {
-    "PHP": true,
-    "Proto": true,
-    "Catppuccin Icons": true
   },
 
   // Telemetry
