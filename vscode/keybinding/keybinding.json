@@ -1,49 +1,32 @@
 [
     {
-        "context": "Workspace",
-        "bindings": {
-            "cmd-shift-g": "git_panel::ToggleFocus"
-        }
+        "key": "shift+cmd+/",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
     },
     {
-        "context": "Workspace",
-        "bindings": {
-            "ctrl-r": [
-                "projects::OpenRecent",
-                {
-                    "create_new_window": false
-                }
-            ]
-        }
+        "key": "cmd+r",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "context": "Editor",
-        "bindings": {
-            "cmd-i": "assistant::InlineAssist"
-        }
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
     },
     {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-alt-right": "pane::SplitRight"
-        }
+        "key": "ctrl+alt+up",
+        "command": "workbench.action.moveEditorToAboveGroup"
     },
     {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-alt-left": "pane::SplitLeft"
-        }
+        "key": "ctrl+alt+down",
+        "command": "workbench.action.moveEditorToBelowGroup"
     },
     {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-alt-up": "pane::SplitUp"
-        }
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-alt-down": "pane::SplitDown"
-        }
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.moveEditorToRightGroup"
     }
 ]
