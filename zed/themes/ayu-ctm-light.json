@@ -37,8 +37,8 @@
                 "icon.disabled": "#a9acaeff",
                 "icon.placeholder": "#8b8e92ff",
                 "icon.accent": "#3b9ee5ff",
-                "status_bar.background": "#dcdddeff",
-                "title_bar.background": "#dcdddeff",
+                "status_bar.background": "#ececedff",
+                "title_bar.background": "#ececedff",
                 "title_bar.inactive_background": "#ececedff",
                 "toolbar.background": "#fcfcfcff",
                 "tab_bar.background": "#ececedff",
@@ -197,8 +197,8 @@
                         "font_weight": null
                     },
                     "comment.doc": {
-                        "color": "#898d90ff",
-                        "font_style": null,
+                        "color": "#8B949E99",
+                        "font_style": "italic",
                         "font_weight": null
                     },
                     "constant": {
