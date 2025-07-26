@@ -110,12 +110,36 @@
     },
 
     // Editor
-    "base_keymap": "VSCode",
     "autosave": {
         "after_delay": {
             "milliseconds": 500
         }
     },
+    "file_finder": {
+        "include_ignored": true,
+        "skip_focus_for_active_in_search": true
+    },
+    "file_scan_exclusions": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/.jj",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/Thumbs.db",
+        "**/.classpath",
+        "**/.settings",
+        "**/__debug_*"
+    ],
+    "private_files": [
+        "**/.env*",
+        "**/*.pem",
+        "**/*.key",
+        "**/*.cert",
+        "**/*.crt",
+        "**/secrets.yml"
+    ],
+    "base_keymap": "VSCode",
     "restore_on_startup": "last_workspace",
     "restore_on_file_reopen": true,
     "autoscroll_on_clicks": true,
@@ -123,17 +147,16 @@
     "format_on_save": "on",
     "ensure_final_newline_on_save": true,
     "multi_cursor_modifier": "alt",
-    "file_scan_exclusions": ["*__debug"],
 
-    // Suggestions
+    // Predictions
     "features": {
         "edit_prediction_provider": "copilot"
     },
-    // "snippet_sort_order": "inline",
-    // "show_edit_predictions": true,
     "edit_predictions": {
         "mode": "eager"
     },
+    "snippet_sort_order": "inline",
+    "show_edit_predictions": true,
 
     // Languages
     "inlay_hints": {
