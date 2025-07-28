@@ -1,10 +1,10 @@
 # Makefile for Zed Editor Configuration Management
 # Author: Generated for Zed configuration setup
 
-.PHONY: check-zed install-config help
+.PHONY: zed-check zed-config help
 
 # Default target
-all: check-zed install-config
+all: zed-check zed-config
 
 # Colors for output
 GREEN := \033[32m
@@ -43,7 +43,7 @@ else
 endif
 
 # Install configuration files
-zed-config: check-zed
+zed-config: zed-check
 	@echo "$(YELLOW)Installing Zed configuration files...$(NC)"
 	@echo "$(YELLOW)Target directory: $(ZED_CONFIG_DIR)$(NC)"
 
@@ -81,26 +81,29 @@ zed-config: check-zed
 	@echo "$(GREEN)✓ Configuration location: $(ZED_CONFIG_DIR)$(NC)"
 
 # Show current configuration status
-status:
+zed-status:
 	@echo "$(YELLOW)Zed Configuration Status:$(NC)"
 	@echo "OS: $(UNAME_S)"
 	@echo "Config directory: $(ZED_CONFIG_DIR)"
 	@echo "Zed binary: $(ZED_BINARY)"
 	@echo ""
 	@echo "Configuration files:"
+
 	@if [ -f "$(ZED_CONFIG_DIR)/settings.json" ]; then \
 		echo "$(GREEN)✓ settings.json exists$(NC)"; \
 	else \
 		echo "$(RED)✗ settings.json missing$(NC)"; \
 	fi
+
 	@if [ -f "$(ZED_CONFIG_DIR)/keymap.json" ]; then \
 		echo "$(GREEN)✓ keymap.json exists$(NC)"; \
 	else \
 		echo "$(RED)✗ keymap.json missing$(NC)"; \
 	fi
+
 	@if [ -d "$(ZED_CONFIG_DIR)/themes" ]; then \
 		echo "$(GREEN)✓ themes directory exists$(NC)"; \
-		@echo "Themes: $$(ls $(ZED_CONFIG_DIR)/themes/*.json 2>/dev/null | wc -l) files"; \
+		echo "Themes: $$(ls $(ZED_CONFIG_DIR)/themes/*.json 2>/dev/null | wc -l) files"; \
 	else \
 		echo "$(RED)✗ themes directory missing$(NC)"; \
 	fi
