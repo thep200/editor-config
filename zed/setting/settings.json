@@ -107,7 +107,7 @@
     "buffer_font_size": 14,
     "buffer_line_height": {
         "custom": 2.25
-    },  
+    },
     "buffer_font_features": {
         "calt": false
     },
@@ -160,6 +160,7 @@
     },
     "snippet_sort_order": "inline",
     "show_edit_predictions": true,
+    "inline_code_actions": true,
 
     // Languages
     "inlay_hints": {
@@ -195,6 +196,15 @@
             "tab_size": 4,
             "hard_tabs": true
         }
+    },
+    "auto_install_extensions": {
+        "html": false,
+        "php": true,
+        "sql": true,
+        "dockerfile": true,
+        "catppuccin icons": true,
+        "make": true,
+        "proto": true
     },
 
     // Git

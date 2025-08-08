@@ -238,7 +238,7 @@
                     },
                     "hint": {
                         "color": "#8ca7c2ff",
-                        "font_style": null,
+                        "font_style": "italic",
                         "font_weight": 700
                     },
                     "keyword": {
@@ -258,7 +258,7 @@
                     },
                     "link_uri": {
                         "color": "#85b304ff",
-                        "font_style": null,
+                        "font_style": "italic",
                         "font_weight": null
                     },
                     "number": {
@@ -318,7 +318,7 @@
                     },
                     "string": {
                         "color": "#86b300ff",
-                        "font_style": null,
+                        "font_style": "italic",
                         "font_weight": null
                     },
                     "string.escape": {
@@ -358,7 +358,7 @@
                     },
                     "type": {
                         "color": "#389ee6ff",
-                        "font_style": null,
+                        "font_style": "italic",
                         "font_weight": null
                     },
                     "variable": {
