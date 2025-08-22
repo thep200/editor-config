@@ -4,7 +4,7 @@
     "author": "Thep200",
     "themes": [
         {
-            "name": "Ayu Ctm Light",
+            "name": "Thep200 Ayu Light",
             "appearance": "light",
             "style": {
                 "border": "#cfd1d2ff",
@@ -15,7 +15,7 @@
                 "border.disabled": "#d5d6d8ff",
                 "elevated_surface.background": "#ececedff",
                 "surface.background": "#ececedff",
-                "background": "#dcdddeff",
+                "background": "#ececedff",
                 "element.background": "#ececedff",
                 "element.hover": "#dfe0e1ff",
                 "element.active": "#cfd0d2ff",
@@ -31,7 +31,7 @@
                 "text.muted": "#8b8e92ff",
                 "text.placeholder": "#a9acaeff",
                 "text.disabled": "#a9acaeff",
-                "text.accent": "#3b9ee5ff",
+                "text.accent": "#10b981ff",
                 "icon": "#5c6166ff",
                 "icon.muted": "#8b8e92ff",
                 "icon.disabled": "#a9acaeff",
