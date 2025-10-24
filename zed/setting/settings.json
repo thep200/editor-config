@@ -8,18 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
     // UI & Themes
-    "agent": {
-        "button": false,
-        "dock": "left",
-        "default_profile": "ask",
-        "default_model": {
-            "provider": "copilot_chat",
-            "model": "claude-sonnet-4"
-        }
-    },
-    "terminal": {
-        "button": false,
-        "dock": "bottom"
+    "active_pane_modifiers": {
+        "inactive_opacity": 0.95,
+        "border_size": 0.0
     },
     "debugger": {
         "button": false,
@@ -28,28 +19,9 @@
         "save_breakpoints": true,
         "stepping_granularity": "line"
     },
-    "notification_panel": {
-        "button": false,
-        "dock": "right"
-    },
-    "git_panel": {
-        "button": false,
-        "dock": "right"
-    },
-    "outline_panel": {
-        "button": false,
-        "dock": "right"
-    },
-    "collaboration_panel": {
-        "button": false
-    },
     "project_panel": {
-        "button": false,
         "dock": "right",
         "starts_open": false
-    },
-    "search": {
-        "button": false
     },
     "status_bar": {
         "active_language_button": true,
@@ -96,7 +68,7 @@
         "show_sign_in": true,
         "show_menus": true
     },
-    "theme": "Thep200 Ayu Light",
+    "theme": "Thep200 Github Dark",
     "icon_theme": "Catppuccin Latte",
     "cursor_blink": true,
     "cursor_shape": "bar",
@@ -104,17 +76,23 @@
     "extend_comment_on_newline": false,
 
     // Fonts
-    "ui_font_size": 15,
+    "ui_font_family": "Monaspace Argon",
+    "buffer_font_family": "Monaspace Argon",
+    "ui_font_size": 15.5,
     "buffer_font_weight": 450,
-    "buffer_font_size": 14,
+    "buffer_font_size": 14.5,
+    "agent_buffer_font_size": 13.5,
     "buffer_line_height": {
-        "custom": 2.5
+        "custom": 2.25
     },
     "buffer_font_features": {
         "calt": false
     },
 
     // Editor
+    "outline_panel": {
+        "dock": "right"
+    },
     "autosave": {
         "after_delay": {
             "milliseconds": 500
@@ -154,18 +132,29 @@
     "multi_cursor_modifier": "alt",
 
     // Predictions
+    "snippet_sort_order": "inline",
+    "show_edit_predictions": true,
+    "inline_code_actions": true,
     "features": {
         "edit_prediction_provider": "copilot"
     },
     "edit_predictions": {
         "mode": "eager"
     },
-    "snippet_sort_order": "inline",
-    "show_edit_predictions": true,
-    "inline_code_actions": true,
+    "agent": {
+        "always_allow_tool_actions": true,
+        "button": false,
+        "dock": "left",
+        "default_profile": "write",
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "grok-code-fast-1"
+        }
+    },
 
     // Languages
     "inlay_hints": {
+        "show_background": false,
         "enabled": true,
         "show_type_hints": false,
         "show_value_hints": false,
@@ -214,6 +203,9 @@
     },
 
     // Git
+    "git_panel": {
+        "dock": "right"
+    },
     "git": {
         "git_gutter": "tracked_files",
         "inline_blame": {
