@@ -1,11 +1,11 @@
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
-  "name": "Thep200 Github Dark",
+  "name": "Thep200 Github Dark Customized",
   "author": "Thep200",
   "themes": [
     {
       "appearance": "dark",
-      "name": "Thep200 Github Dark",
+      "name": "Thep200 Github Dark Ctm",
       "style": {
         "background": "#0d1117ff",
         "border": "#3d444dff",
@@ -230,17 +230,17 @@
             "font_weight": null
           },
           "function": {
-            "color": "#79c0ffff",
+            "color": "#d2a8ffff",
             "font_style": null,
             "font_weight": null
           },
           "function.method": {
-            "color": "#79c0ffff",
+            "color": "#d2a8ffff",
             "font_style": null,
             "font_weight": null
           },
           "function.special.definition": {
-            "color": "#79c0ffff",
+            "color": "#d2a8ffff",
             "font_style": null,
             "font_weight": null
           },
@@ -275,7 +275,7 @@
             "font_weight": null
           },
           "operator": {
-            "color": "#79c0ffff",
+            "color": "#a5d6ffff",
             "font_style": null,
             "font_weight": null
           },
@@ -295,7 +295,7 @@
             "font_weight": null
           },
           "property": {
-            "color": "#f0f6fcff",
+            "color": "#a5d6ffff",
             "font_style": null,
             "font_weight": null
           },
@@ -325,7 +325,7 @@
             "font_weight": null
           },
           "string": {
-            "color": "#a5d6ffff",
+            "color": "#7ee787ff",
             "font_style": null,
             "font_weight": null
           },
@@ -365,7 +365,7 @@
             "font_weight": 700
           },
           "type": {
-            "color": "#f0f6fcff",
+            "color": "#79c0ffff",
             "font_style": null,
             "font_weight": null
           },

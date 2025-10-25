@@ -45,5 +45,11 @@
         "bindings": {
             "ctrl-alt-down": "pane::SplitDown"
         }
+    },
+    {
+      "context": "Editor",
+      "bindings": {
+        "cmd-shift-i": "editor::GoToImplementation"
+      }
     }
 ]
