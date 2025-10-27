@@ -59,6 +59,10 @@ zed-config: zed-check
 		echo "$(YELLOW)Backing up existing keymap.json to keymap_backup.json$(NC)"; \
 		cp "$(ZED_CONFIG_DIR)/keymap.json" "$(ZED_CONFIG_DIR)/keymap_backup.json"; \
 	fi
+	@if [ -f "$(ZED_CONFIG_DIR)/tasks.json" ]; then \
+		echo "$(YELLOW)Backing up existing tasks.json to tasks_backup.json$(NC)"; \
+		cp "$(ZED_CONFIG_DIR)/tasks.json" "$(ZED_CONFIG_DIR)/tasks_backup.json"; \
+	fi
 
 	# Copy configuration files
 	@echo "$(GREEN)Copying settings.json...$(NC)"
@@ -66,6 +70,9 @@ zed-config: zed-check
 
 	@echo "$(GREEN)Copying keymap.json...$(NC)"
 	@cp keymap/keymap.json "$(ZED_CONFIG_DIR)/keymap.json"
+
+	@echo "$(GREEN)Copying tasks.json...$(NC)"
+	@cp task/tasks.json "$(ZED_CONFIG_DIR)/tasks.json"
 
 	# Copy themes if themes directory exists in target
 	@echo "$(GREEN)Copying themes...$(NC)"
@@ -99,6 +106,12 @@ zed-status:
 		echo "$(GREEN)✓ keymap.json exists$(NC)"; \
 	else \
 		echo "$(RED)✗ keymap.json missing$(NC)"; \
+	fi
+
+	@if [ -f "$(ZED_CONFIG_DIR)/tasks.json" ]; then \
+		echo "$(GREEN)✓ tasks.json exists$(NC)"; \
+	else \
+		echo "$(RED)✗ tasks.json missing$(NC)"; \
 	fi
 
 	@if [ -d "$(ZED_CONFIG_DIR)/themes" ]; then \

@@ -1,0 +1,7 @@
+[
+    {
+        "label": "GoVet",
+        "command": "go",
+        "args": ["vet", "./..."]
+    }
+]
