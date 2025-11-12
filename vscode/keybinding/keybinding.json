@@ -35,8 +35,8 @@
         "command": "workbench.action.openSettingsJson"
     },
     {
-        "key": "cmd+s",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+        "key": "shift+cmd+i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider"
     }
 ]
