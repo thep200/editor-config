@@ -1,6 +1,6 @@
 [
     {
-        "label": "GoVet",
+        "label": "Go vet 🤓",
         "command": "go",
         "args": ["vet", "./..."]
     }

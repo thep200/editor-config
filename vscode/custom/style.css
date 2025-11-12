@@ -1,6 +1,6 @@
 /* Class */
 .mtk16 {
-    background: linear-gradient(90deg, #0d9488 -10%, #22c55e 100%);
+    background: linear-gradient(90deg, #0d9488 -5%, #22c55e 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -8,101 +8,53 @@
 
 /* Function */
 .mtk15 {
-    color: #F0F0F0;
-    text-shadow: 0 0 1px #6A5ACD,
+    color: #f0f0f0ff;
+    text-shadow: 0 0 1px #6a5acd,
         0 0 2px #3f3584,
-        0 0 2px #483D8B,
+        0 0 2px #483d8b,
         0 0 3px #3f3584,
-        0 0 3px #483D8B,
-        0 0 3px #483D8B,
-        0 0 5px #483D8B,
-        0 0 5px #483D8B,
-        0 0 5px #483D8B;
+        0 0 3px #483d8b,
+        0 0 3px #483d8b,
+        0 0 5px #483d8b,
+        0 0 5px #483d8b,
+        0 0 5px #483d8b;
 }
 
 /* Hidden scroll bar border in terminal */
-.xterm-decoration-overview-ruler {
+/* .xterm-decoration-overview-ruler {
     display: none !important;
-}
+} */
 
 /* Hide top border line in debug console */
-.repl-input-wrapper {
+/* .repl-input-wrapper {
     border: none !important;
-}
+} */
 
 /* Hide icon debug in console */
-.codicon-debug-console-evaluation-prompt {
+/* .codicon-debug-console-evaluation-prompt {
     display: none !important;
-}
-
-/* #workbench\.panel\.chatEditing > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.pane-body > div.interactive-session > div.chat-welcome-view-container {
-    display: none !important;
-} */
-
-/* Top bar of primary side bar */
-/* #workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
-    display: none;
-} */
-
-/* Hover notification */
-/* div.notification-list-item.expanded:hover {
-} */
-
-/* Hide top bar terminal */
-/* #workbench\.parts\.panel > div.composite.title.has-composite-bar {
-} */
-
-/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.show-file-icons {
-    display: none;
-} */
-
-/* .tabs-and-actions-container {
-    background-color: #121212;
-} */
-
-/* .button-link {
-    transition: 0.45s;
-}
-
-.button-link:hover {
-    margin-left: 20px !important;
-} */
-
-/* Title bar background custom */
-/* #workbench\.parts\.titlebar {
-    background-color: #ff9b90 !important;
-    background: linear-gradient(90deg, rgba(25,27,35,1) 0%, rgba(20,135,78,1) 20%, rgba(25,27,35,1) 35%) !important;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-/* Keyword */
-/* .mtk22 {
-    background: linear-gradient(90deg, #ff9b90 -10%, #ff7b72 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-/* Class, interface */
-/* .mtk26 {
-    background: linear-gradient(90deg, #FFBB90 -25%, #FF9F50 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 } */
 
 /* Hide peek view right bar */
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
-    display: none !important;
-}
-
-/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2) > div > div > div {
+/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
     display: none !important;
 } */
 
 /* Hide border of input box */
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget.inline-chat-widget > div.zone-widget-container > div {
+/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget.inline-chat-widget > div.zone-widget-container > div {
     border: none !important;
-}
+} */
+
+/* Hide chat welcome view */
+ /* #workbench\.panel\.chat > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.pane-body > div.interactive-session > div.chat-welcome-view-container > div {
+    display: none !important;
+} */
+
+/* Custom font family for all vscode UI */
+/* .monaco-workbench {
+    font-family: "Monaspace argon" !important;
+} */
+
+/* .dirty-diff-added {
+    padding: 10px !important;
+} */
