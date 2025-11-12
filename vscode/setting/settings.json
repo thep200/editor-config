@@ -136,14 +136,15 @@
         "**/.DS_Store": true
     },
     // ===================================================================
-    // 6. GIT & GITLENS
+    // GIT & GITLENS
     // ===================================================================
+    "gitlens.codeLens.enabled": false,
     "git.openRepositoryInParentFolders": "never",
     "gitlens.blame.fontStyle": "italic",
     "gitlens.blame.fontFamily": "Monaspace argon",
     "gitlens.currentLine.fontStyle": "italic",
-    "gitlens.currentLine.format": "🐾 #${id} by ${author}, ${agoOrDate}",
     "gitlens.currentLine.fontFamily": "Monaspace argon",
+    "gitlens.currentLine.format": "🐾 #${id} by ${author}, ${agoOrDate}",
     // ===================================================================
     // THEMING & APPEARANCE
     // ===================================================================
@@ -310,6 +311,8 @@
     // --- Other File Types ---
     "notebook.output.fontFamily": "Monaspace argon",
     "markdown.preview.fontFamily": "Monaspace argon",
+    // --- Extensions ---
+    "extensions.ignoreRecommendations": true,
     // ===================================================================
     // META & SYNC
     // ===================================================================
@@ -464,6 +467,7 @@
         // ===================================================================
         // GIT & GITLENS
         // ===================================================================
+        "gitlens.codeLens.enabled",
         "git.openRepositoryInParentFolders",
         "gitlens.blame.fontStyle",
         "gitlens.blame.fontFamily",
@@ -485,9 +489,11 @@
         "zenMode.showTabs",
         // --- Other File Types ---
         "notebook.output.fontFamily",
-        "markdown.preview.fontFamily"
+        "markdown.preview.fontFamily",
+        // --- Extensions ---
+        "extensions.ignoreRecommendations",
     ],
     // --- Daily changes ---
     "window.newWindowProfile": "Default",
-    "chat.commandCenter.enabled": false
+    "chat.commandCenter.enabled": false,
 }
