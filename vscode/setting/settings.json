@@ -107,6 +107,7 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "terminal.integrated.env.osx": {
         "Q_NEW_SESSION": "1"
     },
@@ -442,6 +443,7 @@
         "terminal.integrated.cursorStyle",
         "terminal.integrated.smoothScrolling",
         "terminal.integrated.defaultProfile.osx",
+        "terminal.integrated.shellIntegration.decorationsEnabled",
         "terminal.integrated.env.osx",
         // ===================================================================
         // FILES & SEARCH
@@ -483,8 +485,9 @@
         "zenMode.showTabs",
         // --- Other File Types ---
         "notebook.output.fontFamily",
-        "markdown.preview.fontFamily",
+        "markdown.preview.fontFamily"
     ],
     // --- Daily changes ---
     "window.newWindowProfile": "Default",
+    "chat.commandCenter.enabled": false
 }

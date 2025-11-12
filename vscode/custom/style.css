@@ -20,41 +20,18 @@
         0 0 5px #483d8b;
 }
 
-/* Hidden scroll bar border in terminal */
-/* .xterm-decoration-overview-ruler {
-    display: none !important;
-} */
-
-/* Hide top border line in debug console */
-/* .repl-input-wrapper {
+/*
+* Hide top border line in debug console
+* Hide icon debug in console
+*/
+.repl-input-wrapper {
     border: none !important;
-} */
-
-/* Hide icon debug in console */
-/* .codicon-debug-console-evaluation-prompt {
+}
+.codicon-debug-console-evaluation-prompt {
     display: none !important;
-} */
+}
 
 /* Hide peek view right bar */
-/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
     display: none !important;
-} */
-
-/* Hide border of input box */
-/* #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget.inline-chat-widget > div.zone-widget-container > div {
-    border: none !important;
-} */
-
-/* Hide chat welcome view */
- /* #workbench\.panel\.chat > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.pane-body > div.interactive-session > div.chat-welcome-view-container > div {
-    display: none !important;
-} */
-
-/* Custom font family for all vscode UI */
-/* .monaco-workbench {
-    font-family: "Monaspace argon" !important;
-} */
-
-/* .dirty-diff-added {
-    padding: 10px !important;
-} */
+}
