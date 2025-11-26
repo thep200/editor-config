@@ -77,22 +77,32 @@
     "editor.suggest.showConstants": true,
     "editor.suggest.localityBonus": true,
     "editor.suggest.filterGraceful": true,
+    "editor.suggest.shareSuggestSelections": true,
     // --- Inline Suggest ---
     "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.edits.renderSideBySide": "auto",
+    "editor.inlineSuggest.edits.allowCodeShifting": "always",
+    "editor.inlineSuggest.minShowDelay": 3,
     "editor.inlineSuggest.fontFamily": "Monaspace argon",
     "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
     // --- Chat ---
+    "chat.commandCenter.enabled": false,
     "chat.editor.wordWrap": "on",
     "chat.fontFamily": "Monaspace argon",
     "chat.notifyWindowOnConfirmation": true,
     "chat.notifyWindowOnResponseReceived": true,
     "chat.implicitContext.suggestedContext": true,
-    "chat.agent.thinkingStyle": "expanded",
+    "chat.agent.thinkingStyle": "fixedScrolling",
     "chat.mcp.gallery.enabled": true,
     "chat.implicitContext.enabled": {
         "panel": "always",
     },
-    "chat.promptFiles": true,
     "chat.promptFilesLocations": {
         ".vscode/prompts": true,
     },
@@ -424,6 +434,11 @@
         "editor.inlineSuggest.enabled",
         "editor.inlineSuggest.fontFamily",
         "editor.inlineSuggest.syntaxHighlightingEnabled",
+        "editor.quickSuggestions",
+        "editor.inlineSuggest.edits.renderSideBySide",
+        "editor.inlineSuggest.edits.allowCodeShifting",
+        "editor.inlineSuggest.minShowDelay",
+        "editor.inlineSuggest.showToolbar",
         // --- Chat ---
         "chat.editor.wordWrap",
         "chat.fontFamily",
@@ -432,9 +447,9 @@
         "chat.implicitContext.suggestedContext",
         "chat.agent.thinkingStyle",
         "chat.implicitContext.enabled",
-        "chat.promptFiles",
         "chat.promptFilesLocations",
         "chat.mcp.gallery.enabled",
+        "chat.commandCenter.enabled",
         // ===================================================================
         // TERMINAL
         // ===================================================================
@@ -495,5 +510,4 @@
     ],
     // --- Daily changes ---
     "window.newWindowProfile": "Default",
-    "chat.commandCenter.enabled": false,
 }

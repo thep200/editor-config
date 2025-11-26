@@ -1,27 +1,20 @@
-# Amazon Q start
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
-
-# GVM
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
-# Zsh config
+# ZSH Config
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="jovial"
 plugins=(
   git
+
+  zsh-completions
+  zsh-autosuggestions
 )
 
-# Export
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/sbin:$PATH
+# Path
 export PATH=~/Projects/Env/devdok/bin:$PATH
-export PATH=/usr/local/bin:/usr/bin:$PATH
-export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
 
 # Alias
 alias ethis="vi ~/.zshrc"
 alias athis="source ~/.zshrc"
-alias tossh="cd ~/.ssh"
 alias crack="xattr -cr"
 alias vdock="lazydocker"
 
@@ -35,18 +28,15 @@ JOVIAL_SYMBOL=(
   corner.bottom '╰──'
   git.dirty ' ✘'
   git.clean ' ✔'
-  
   arrow '─➤ 🌵'
   arrow.git-clean '─➤ 🌵'
   arrow.git-dirty '─➤ 🌵'
 )
-
 JOVIAL_PROMPT_PRIORITY=(
   user
   path
   git-info
 )
-
 JOVIAL_PALETTE=(
   white   '%F{15}'
   purple  '%F{147}'
@@ -56,7 +46,6 @@ JOVIAL_PALETTE=(
   error   '%F{203}'
   normal  '%f%b'
 )
-
 JOVIAL_AFFIXES[git-info.prefix]=' ${JOVIAL_PALETTE[white]}('
 JOVIAL_AFFIXES[git-info.suffix]='${JOVIAL_PALETTE[white]})${JOVIAL_PALETTE[normal]}'
 JOVIAL_AFFIXES[user.prefix]='${JOVIAL_PALETTE[white]}┤'
@@ -83,6 +72,7 @@ eval "$(pyenv virtualenv-init -)"
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOBIN
+export PATH="$PATH:$(go env GOPATH)/bin"
 
-# Amazon Q block
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+# ZSH Completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
