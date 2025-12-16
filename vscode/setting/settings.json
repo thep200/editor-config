@@ -79,6 +79,7 @@
     "editor.suggest.filterGraceful": true,
     "editor.suggest.shareSuggestSelections": true,
     // --- Inline Suggest ---
+    "github.copilot.nextEditSuggestions.enabled": true,
     "editor.inlineSuggest.enabled": true,
     "editor.inlineSuggest.edits.renderSideBySide": "auto",
     "editor.inlineSuggest.edits.allowCodeShifting": "always",
@@ -106,6 +107,7 @@
     "chat.promptFilesLocations": {
         ".vscode/prompts": true,
     },
+    "chat.viewSessions.enabled": false,
     // ===================================================================
     // TERMINAL
     // ===================================================================
@@ -117,6 +119,7 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.suggest.enabled": false,
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "terminal.integrated.env.osx": {
         "Q_NEW_SESSION": "1"
@@ -155,6 +158,10 @@
     "gitlens.currentLine.fontStyle": "italic",
     "gitlens.currentLine.fontFamily": "Monaspace argon",
     "gitlens.currentLine.format": "🐾 #${id} by ${author}, ${agoOrDate}",
+    // ===================================================================
+    // TESTING
+    // ===================================================================
+    "testing.resultsView.layout": "treeLeft",
     // ===================================================================
     // THEMING & APPEARANCE
     // ===================================================================
@@ -329,6 +336,7 @@
     // --- Custom CSS ---
     "vscode_custom_css.imports": [
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/style.css",
+        "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/popup.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
     ],
     // --- Settings Sync ---
@@ -431,6 +439,7 @@
         "editor.suggest.localityBonus",
         "editor.suggest.filterGraceful",
         // --- Inline Suggest ---
+        "github.copilot.nextEditSuggestions.enabled",
         "editor.inlineSuggest.enabled",
         "editor.inlineSuggest.fontFamily",
         "editor.inlineSuggest.syntaxHighlightingEnabled",
@@ -461,6 +470,7 @@
         "terminal.integrated.cursorStyle",
         "terminal.integrated.smoothScrolling",
         "terminal.integrated.defaultProfile.osx",
+        "terminal.integrated.suggest.enabled",
         "terminal.integrated.shellIntegration.decorationsEnabled",
         "terminal.integrated.env.osx",
         // ===================================================================
@@ -489,6 +499,11 @@
         "gitlens.currentLine.fontStyle",
         "gitlens.currentLine.format",
         "gitlens.currentLine.fontFamily",
+        // ===================================================================
+        // TESTING
+        // ===================================================================
+        "chat.viewSessions.enabled",
+        "testing.resultsView.layout",
         // ===================================================================
         // THEMING & APPEARANCE
         // ===================================================================
