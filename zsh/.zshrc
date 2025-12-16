@@ -9,8 +9,8 @@ plugins=(
 )
 
 # Path
-export PATH=~/Projects/Env/devdok/bin:$PATH
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
+export PATH=~/Projects/Env/devdok/bin:$PATH
 
 # Alias
 alias ethis="vi ~/.zshrc"
@@ -76,3 +76,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 # ZSH Completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+# Tab to accept autosuggestions
+bindkey '^I' autosuggest-accept
