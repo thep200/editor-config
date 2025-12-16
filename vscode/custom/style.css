@@ -27,11 +27,12 @@
 .repl-input-wrapper {
     border: none !important;
 }
+
 .codicon-debug-console-evaluation-prompt {
     display: none !important;
 }
 
 /* Hide peek view right bar */
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.editor-container > div > div > div.overflow-guard > div.overlayWidgets > div.zone-widget > div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded > div.body > div.monaco-split-view2.horizontal > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > canvas {
+#workbench\.parts\.editor>div.content>div>div>div>div>div.monaco-scrollable-element.mac>div.split-view-container>div:nth-child(1)>div>div.editor-container>div>div>div.overflow-guard>div.overlayWidgets>div.zone-widget>div.zone-widget-container.peekview-widget.reference-zone-widget.results-loaded>div.body>div.monaco-split-view2.horizontal>div.monaco-scrollable-element.mac>div.split-view-container>div:nth-child(1)>div>div>div.overflow-guard>div.monaco-scrollable-element.editor-scrollable.vs-dark.mac>canvas {
     display: none !important;
 }

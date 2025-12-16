@@ -251,6 +251,7 @@
             {
                 "scope": [
                     "string",
+                    "support.type.property-name.css"
                 ],
                 "settings": {
                     "foreground": "#7ee787",
@@ -279,7 +280,8 @@
                     "keyword.control.conditional.vue",
                     "entity.name.tag.css",
                     "entity.other.attribute-name.id.css",
-                    "entity.other.attribute-name.class.css"
+                    "entity.other.attribute-name.class.css",
+                    "variable.parameter.keyframe-list.css"
                 ],
                 "settings": {
                     "foreground": "#c4b5fd",
@@ -302,7 +304,9 @@
             {
                 "scope": [
                     "constant.character.escape",
-                    "keyword.operator.regexp"
+                    "keyword.operator.regexp",
+                    "entity.other.attribute-name.pseudo-class.css",
+                    "entity.other.attribute-name.pseudo-element.css"
                 ],
                 "settings": {
                     "foreground": "#D16969"
@@ -311,10 +315,24 @@
             {
                 "scope": [
                     "punctuation.definition.string.end",
-                    "punctuation.definition.string.begin"
+                    "punctuation.definition.string.begin",
                 ],
                 "settings": {
                     "foreground": "#e394dc"
+                }
+            },
+            {
+                "scope": [
+                    "meta.property-value.css",
+                    "entity.other.keyframe-offset.css",
+                    "punctuation.section.property-list.begin.bracket.curly.css",
+                    "punctuation.section.property-list.end.bracket.curly.css",
+                    "punctuation.section.keyframes.begin.bracket.curly.css",
+                    "punctuation.section.keyframes.end.bracket.curly.css",
+                ],
+                "settings": {
+                    "foreground": "#ffffff",
+                    "fontStyle": "italic"
                 }
             }
         ]
