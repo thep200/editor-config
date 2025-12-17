@@ -219,3 +219,119 @@ const observer = new MutationObserver((mutationsList) => {
 });
 
 observer.observe(target, config);
+
+/* ========================================
+ * Find Widget Enhancement
+ * ======================================== */
+
+// Track find widget state
+var findWidgetActive = false;
+var findWidgetLastValue = "";
+var findWidgetAnimationTimeout = null;
+
+// Observe find widget appearance
+function setupFindWidgetObserver() {
+    const findWidgetObserver = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            // Check for find widget being added
+            if (mutation.type === "childList") {
+                const findWidget = document.querySelector(".editor-widget.find-widget");
+
+                if (findWidget && !findWidgetActive) {
+                    findWidgetActive = true;
+                    initializeFindWidget(findWidget);
+                }
+
+                // Check if find widget was removed
+                if (!findWidget && findWidgetActive) {
+                    findWidgetActive = false;
+                    findWidgetLastValue = "";
+                }
+            }
+        }
+    });
+
+    findWidgetObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+    });
+}
+
+// Initialize find widget enhancements
+function initializeFindWidget(findWidget) {
+    // Add animation class on open
+    findWidget.classList.add("find-widget-animated");
+
+    // Setup input listener for search animation
+    const searchInput = findWidget.querySelector(".monaco-inputbox input");
+    if (searchInput && !searchInput.hasAttribute("data-find-listener")) {
+        searchInput.setAttribute("data-find-listener", "true");
+        findWidgetLastValue = searchInput.value;
+
+        // Animate on input change
+        searchInput.addEventListener("input", (e) => {
+            const newValue = e.target.value;
+            if (newValue !== findWidgetLastValue) {
+                findWidgetLastValue = newValue;
+
+                if (findWidgetAnimationTimeout) {
+                    clearTimeout(findWidgetAnimationTimeout);
+                }
+
+                findWidgetAnimationTimeout = setTimeout(() => {
+                    animateFindWidgetSearch(findWidget);
+                }, 30);
+            }
+        });
+
+        // Subtle scale effect on keydown
+        searchInput.addEventListener("keydown", (e) => {
+            if (e.key !== "Enter" && e.key !== "Escape" && !e.key.startsWith("Arrow")) {
+                const inputBox = searchInput.closest(".monaco-inputbox");
+                if (inputBox) {
+                    inputBox.style.transform = "scale(1.01)";
+                    setTimeout(() => {
+                        inputBox.style.transform = "";
+                    }, 80);
+                }
+            }
+        });
+    }
+
+    // Setup replace toggle animation
+    const replaceToggle = findWidget.querySelector(".codicon-find-replace-all, .codicon-replace-all");
+    if (replaceToggle) {
+        replaceToggle.addEventListener("click", () => {
+            setTimeout(() => {
+                const replacePart = findWidget.querySelector(".replace-part");
+                if (replacePart) {
+                    replacePart.style.animation = "none";
+                    void replacePart.offsetWidth;
+                    replacePart.style.animation = "fadeInReplace 0.15s ease-out";
+                }
+            }, 10);
+        });
+    }
+}
+
+// Animate find widget on search
+function animateFindWidgetSearch(findWidget) {
+    const matchesCount = findWidget.querySelector(".matchesCount");
+    if (matchesCount) {
+        matchesCount.style.transition = "transform 0.1s ease, opacity 0.1s ease";
+        matchesCount.style.transform = "scale(1.1)";
+        matchesCount.style.opacity = "1";
+
+        setTimeout(() => {
+            matchesCount.style.transform = "scale(1)";
+            matchesCount.style.opacity = "0.9";
+        }, 100);
+    }
+}
+
+// Initialize find widget observer when DOM is ready
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupFindWidgetObserver);
+} else {
+    setupFindWidgetObserver();
+}
