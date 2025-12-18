@@ -24,3 +24,11 @@
     border: none !important;
     margin-bottom: 5px !important;
 }
+
+#workbench\.panel\.chat > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.pane-body.chat-viewpane.chat-view-welcome-enabled > div.chat-controls-container > div.interactive-session > div.chat-welcome-view-container > div {
+    display: none !important;
+}
+
+#workbench\.panel\.chat .monaco-list-row:hover {
+    background-color: transparent !important;
+}
