@@ -251,7 +251,8 @@
             {
                 "scope": [
                     "string",
-                    "support.type.property-name.css"
+                    "support.type.property-name.css",
+                    "support.type.vendored.property-name.css"
                 ],
                 "settings": {
                     "foreground": "#7ee787",
@@ -353,6 +354,8 @@
     // ===================================================================
     // --- Custom CSS ---
     "vscode_custom_css.imports": [
+        "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/chatpane.css",
+        "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/findwidget.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/style.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/popup.css",
         "file:///Users/thep200/Projects/Study/editor-config/vscode/custom/script.js"
