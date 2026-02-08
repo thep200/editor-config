@@ -2,7 +2,7 @@
  * Chat Input Customization
  * ======================================== */
 
-#workbench\.panel\.chat>div>div>div.monaco-scrollable-element.mac>div.split-view-container>div>div>div.pane-body.chat-viewpane.chat-view-welcome-enabled>div.chat-controls-container>div.interactive-session>div.interactive-input-part>div.interactive-input-and-side-toolbar>div {
+/* #workbench\.panel\.chat>div>div>div.monaco-scrollable-element.mac>div.split-view-container>div>div>div.pane-body.chat-viewpane.chat-view-welcome-enabled>div.chat-controls-container>div.interactive-session>div.interactive-input-part>div.interactive-input-and-side-toolbar>div {
     padding: 5px 10px !important;
     border-radius: 10px !important;
     background-color: transparent !important;
@@ -31,4 +31,10 @@
 
 #workbench\.panel\.chat .monaco-list-row:hover {
     background-color: transparent !important;
+}
+ */
+
+/* Chat icon pane */
+#workbench\.parts\.titlebar > div > div.titlebar-right > div > div > div > ul > li > div > div > a {
+    display: none !important;
 }
