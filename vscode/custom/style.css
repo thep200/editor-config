@@ -1,5 +1,5 @@
 /* Class */
-.mtk16 {
+.mtk17 {
     background: linear-gradient(90deg, #0d9488 -5%, #22c55e 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -7,7 +7,7 @@
 }
 
 /* Function */
-.mtk15 {
+.mtk16 {
     color: #f0f0f0ff;
     text-shadow: 0 0 1px #6a5acd,
         0 0 2px #3f3584,
